@@ -17,7 +17,7 @@
           <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="order.html">Вязание на заказ</a>
+          <a href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
           <a href="#">Поиск по сайту</a>
@@ -28,15 +28,14 @@
       </ul>
     </div>
   </nav>
-
 </header>
 <main class="page-main">
   <h1> Милые штучки ручной работы для дома</h1>
   <section class="catalogue-section">
-    <a class="catalogue-section__item catalogue-section--interior" href="#">
+    <a class="catalogue-section__item catalogue-section__item--interior" href="#">
       <p>Предметы интерьера</p>
     </a>
-    <a class="catalogue-section__item catalogue-section--toy" href="#">
+    <a class="catalogue-section__item catalogue-section__item--toy" href="#">
       <p>Детские игрушки</p>
     </a>
   </section>
@@ -95,60 +94,49 @@
             лайков,
             как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу
             стали более стильными, а также набирают больше лайков!</p>
-          <p><cite class="reviews__author-name">Анастасия Красильникова</cite></p>
-          <p><cite class="reviews__author-account">@misssssiskras</cite></p>
+          <cite class="reviews__author-name">Анастасия Красильникова</cite>
+          <cite class="reviews__author-account">@misssssiskras</cite>
         </blockquote>
       </div>
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <button class="reviews__item reviews__item--prev" type="button">Предыдущий отзыв</button>
+      <button class="reviews__item reviews__item--next" type="button">Следующий отзыв</button>
       <a class="reviews__write button" href="reviews.html">Написать</a>
     </div>
   </section>
+  <section class="contacts">
+    <h2 class="contacts__title">Контакты</h2>
+    <dl class="contacts__description">
+      <dt class="contacts__contact-type">e-mail:</dt>
+      <dd class="contacts__contact-adress">info@mimimishkashop.ru</dd>
+      <dt class="contacts__contact-type">адрес:</dt>
+      <dd class="contacts__contact-adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+    </dl>
+  </section>
+  <section class="map">
+    <div class="map__map-section">
+      <img class="map__map-image" src="" width="322" height="457" alt="Адрес на карте">
+    </div>
+  </section>
+  <a class="feedback__button" href="feedback.html">Напишите нам</a>
 </main>
 <footer class="page-footer">
-  <section class="page-footer__contacts contacts">
-    <h2 class="page-footer__contacts-title">Контакты</h2>
-    <table class="page-footer__contact-description">
-      <tr>
-        <td class="page-footer__contact-type">
-          e-mail:
-        </td>
-        <td class="page-footer__contact-adress">
-          info@mimimishkashop.ru
-        </td>
-      </tr>
-      <tr>
-        <td class="page-footer__contact-type">
-          адрес:
-        </td>
-        <td class="page-footer__contact-adress">
-          г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-        </td>
-      </tr>
-    </table>
-  </section>
-  <section class="page-footer__map map">
-    <div class="page-footer__map-section">
-      <img class="page-footer__map-image" src="" width="322" height="457" alt="Адрес на карте">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Мы в Фейсбук</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Мы в Твиттер</a>
+        </li>
+      </ul>
     </div>
-    <a class="page-footer__feedback button" href="feedback.html">Напишите нам</a>
-  </section>
-  <div class="page-footer__social social">
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">Мы в Фейсбук</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="#">Мы в Твиттер</a>
-      </li>
-    </ul>
-  </div>
-  <div class="page-footer__copyright copyright">
-    <b class="copyright__text">Разработано:</b>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="copyright__link">HTML Academy</span></a>
+    </div>
   </div>
 </footer>
 </body>
