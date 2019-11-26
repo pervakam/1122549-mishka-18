@@ -1,5 +1,12 @@
-.page-header {
-  width: 320px;
-  height: 279px;
-  background-color: yellow;
+.page-main {
+  &__intro {
+    box-sizing: border-box;
+    height: 300px;
+    background: url("../blocks/index-title/img/hero-mobile@1x.jpg") no-repeat center;
+  }
+
+  &__title {
+    font-size: 27px;
+    font-weight: bold;
+  }
 }

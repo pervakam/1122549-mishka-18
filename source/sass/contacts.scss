@@ -1,5 +1,25 @@
-.page-header {
-  width: 320px;
-  height: 279px;
-  background-color: yellow;
+.contacts {
+
+  text-align: left;
+  font-size: 15px;
+  line-height: 2;
+  color: #444444;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  &__contact-type {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  &__contact-adress {
+    display: inline-block;
+    vertical-align: center;
+  }
+
+
 }

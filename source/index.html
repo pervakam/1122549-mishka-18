@@ -3,43 +3,46 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link href="css/header.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-wrapper">
   <a class="page-header__logo">
-    <img class="page-header__logo-image" src="" width="86" height="36" alt="Магазин Мишка">
+    <img class="page-header__logo-image" src="blocks/header/img/logo-mobile.svg" width="86" height="36"
+         alt="Магазин Мишка">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
           <a href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="form.html">Вязание на заказ</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="#">Поиск по сайту</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="#">Корзина:пока пуста</a>
         </li>
       </ul>
     </div>
   </nav>
 </header>
-<main class="page-main">
-  <h1> Милые штучки ручной работы для дома</h1>
+<main class="page-main page-wrapper">
+  <div class="page-main__intro">
+    <h1 class="page-main__title"> Милые штучки<br>ручной<br>работы для дома</h1>
+  </div>
   <section class="catalog-section">
-    <a class="catalog-section__item catalog-section__item--interior" href="#">
-      <p>Предметы интерьера</p>
+    <a class="catalog-section__item catalog-section__interior" href="#">
+      <p class="catalog-section__name">Предметы интерьера</p>
     </a>
-    <a class="catalog-section__item catalog-section__item--toy" href="#">
-      <p>Детские игрушки</p>
+    <a class="catalog-section__item catalog-section__toy" href="#">
+      <p class="catalog-section__name">Детские игрушки</p>
     </a>
   </section>
   <section class="product-week">
@@ -49,19 +52,20 @@
       размерах</p>
     <table class="product-week__description">
       <tr>
-        <td class="product-week__parameter">Цвет:</td>
-        <td class="product-week__value">«Тиффани»/серый</td>
+        <td class="product-week__item product-week__parameter">Цвет:</td>
+        <td class="product-week__item product-week__value">«Тиффани»/серый</td>
       </tr>
       <tr>
-        <td class="product-week__parameter">Диаметр:</td>
-        <td class="product-week__value">25 см</td>
+        <td class="product-week__item product-week__parameter">Диаметр:</td>
+        <td class="product-week__item product-week__value">25 см</td>
       </tr>
       <tr>
-        <td class="product-week__parameter">Высота:</td>
-        <td class="product-week__value">15 см</td>
+        <td class="product-week__item product-week__parameter">Высота:</td>
+        <td class="product-week__item product-week__value">15 см</td>
       </tr>
     </table>
-    <img class="product-week__promo-image" src="" width="260" height="315" alt="Вязанные корзинки">
+    <img class="product-week__promo-image" src="blocks/product-week/img/triple-set-mobile@1x.jpg" width="260"
+         height="315" alt="Вязанные корзинки">
     <span class="product-week__price">Цена:990 руб.</span>
     <a class="product-week__order button" href="form.html">Заказать</a>
   </section>
@@ -80,7 +84,7 @@
     <div class="reviews__wrapper slider">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__list slider__list">
-        <blockquote class="reviews__item slider__item">
+        <blockquote class="reviews__comment slider__item">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков,
             как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу
@@ -88,9 +92,11 @@
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
           <a class="reviews__author-account" href="#">@misssssiskras</a>
         </blockquote>
+        <div class="reviews__buttons">
+          <button class="reviews__item reviews__item--prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__item reviews__item--next" type="button">Следующий отзыв</button>
+        </div>
       </div>
-      <button class="reviews__item reviews__item--prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__item reviews__item--next" type="button">Следующий отзыв</button>
       <a class="reviews__write button" href="reviews.html">Написать</a>
     </div>
   </section>
@@ -100,7 +106,7 @@
       <dt class="contacts__contact-type">e-mail:</dt>
       <dd class="contacts__contact-adress"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
       <dt class="contacts__contact-type">адрес:</dt>
-      <dd class="contacts__contact-adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+      <dd class="contacts__contact-adress">г. Санкт-Петербург,<br>ул. Большая<br>Конюшенная,<br>д. 19/8, офис 101</dd>
     </dl>
   </section>
   <section class="map">
@@ -110,7 +116,7 @@
   </section>
   <a class="feedback__button" href="feedback.html">Напишите нам</a>
 </main>
-<footer class="page-footer">
+<footer class="page-footer page-wrapper">
   <div class="page-footer__wrapper">
     <div class="page-footer__social social">
       <ul class="social__list">

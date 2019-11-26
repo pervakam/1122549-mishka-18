@@ -1,5 +1,64 @@
-.page-header {
-  width: 320px;
-  height: 279px;
-  background-color: yellow;
-}
+.reviews {
+
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 2;
+    text-align: left;
+    color: #444444;
+  }
+
+  &__author-name {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    font-style: normal;
+  }
+
+  &__autor-account {
+    font-size: 17px;
+    text-align: left;
+    color: #000000;
+  }
+
+  &__buttons {
+    align-items: center;
+    border: 1px solid #ececec;
+    margin: 0 auto;
+    width: 261px;
+    height: 52px;
+    padding: auto 0;
+
+  }
+
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+      width: 130px;
+      height: 52px;
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+
+
+      &--prev {
+        background: url("../blocks/reviews/img/icon-left-arrow.svg") no-repeat 50% 50%;
+        border-right: 1px solid #ececec;
+      }
+
+      &--next {
+        background: url("../blocks/reviews/img/icon-right-arrow.svg") no-repeat 50% 50%;
+        margin-left: -5px;
+      }
+    }
+
+
+  }
+
