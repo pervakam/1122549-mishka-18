@@ -1,0 +1,19 @@
+.social {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+}
+
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+}

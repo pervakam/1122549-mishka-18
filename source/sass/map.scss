@@ -1,0 +1,16 @@
+.map {
+
+  &__map-frame {
+    border: none;
+    z-index: 0;
+  }
+
+  &__map-image {
+    display: block;
+    margin: -457px auto 0;
+    z-index: -1;
+  }
+}
+
+
+
