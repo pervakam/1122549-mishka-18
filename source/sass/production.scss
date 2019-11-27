@@ -1,0 +1,51 @@
+.production {
+  margin-top: 30px;
+  padding: 0 30px;
+
+
+  &__title {
+    display: flex;
+    vertical-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid #ececec;
+    border-bottom: none;
+    margin: 0 0;
+    padding: 26px 34px;
+
+
+    &--picture:before {
+      display: block;
+      content: "";
+      background: url("../blocks/production/img/icon-video.svg") no-repeat;
+      height: 27px;
+      width: 32px;
+      padding-right: 25px;
+      z-index: 1;
+    }
+  }
+
+  &__video {
+    height: 150px;
+    background: url("../blocks/production/img/video-mobile@1x.jpg") no-repeat left;
+    width: 260px;
+
+  }
+
+  &__play {
+    margin-top: 37px;
+  }
+
+  &__description {
+    border: 1px solid #ececec;
+    border-top: none;
+    margin: 0 0;
+    font-size: 13px;
+    text-align: left;
+    color: #444444;
+    padding: 34px 40px 29px 34px;
+    line-height: 1.85;
+
+  }
+}

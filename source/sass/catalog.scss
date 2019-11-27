@@ -12,17 +12,30 @@
 }
 
 .catalog {
+  padding: 0 30px;
+  margin: 0 0;
 
   &__list {
     list-style: none;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+
+  &__item {
+    border: 1px solid #ececec;
+    margin-top: 30px;
   }
 
   &__item-description {
     text-align: left;
+    padding: 0 28px;
+
   }
 
   &__item-price {
-    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 28px;
   }
 
   &__item-title {
@@ -33,6 +46,7 @@
   &__item-parameter {
     font-size: 13px;
     color: #444444;
+    border-bottom: 1px solid #ececec;
   }
 
   &__item-cost {
