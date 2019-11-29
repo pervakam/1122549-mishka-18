@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">-->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -35,7 +35,7 @@
 </header>
 <main class="page-main page-wrapper">
   <div class="page-main__intro">
-    <h1 class="page-main__title"> Милые штучки<br>ручной<br>работы для дома</h1>
+    <h1 class="page-main__description"> Милые штучки<br>ручной<br>работы для дома</h1>
   </div>
   <section class="catalog-section">
     <a class="catalog-section__item catalog-section__interior" href="#">
@@ -50,20 +50,20 @@
     <span class="product-week__type">Товар недели</span>
     <p class="product-week__about">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
       размерах</p>
-    <table class="product-week__description">
-      <tr>
-        <td class="product-week__item product-week__parameter">Цвет:</td>
-        <td class="product-week__item product-week__value">«Тиффани»/серый</td>
-      </tr>
-      <tr>
-        <td class="product-week__item product-week__parameter">Диаметр:</td>
-        <td class="product-week__item product-week__value">25 см</td>
-      </tr>
-      <tr>
-        <td class="product-week__item product-week__parameter">Высота:</td>
-        <td class="product-week__item product-week__value">15 см</td>
-      </tr>
-    </table>
+    <ul class="product-week__description">
+      <li class="product-week__item">
+        <span class="product-week__parameter">Цвет:</span>
+        <span class="product-week__value">«Тиффани»/серый</span>
+      </li>
+      <li class="product-week__item">
+        <span class="product-week__parameter">Диаметр:</span>
+        <span class="product-week__value">25 см</span>
+      </li>
+      <li class="product-week__item">
+        <span class="product-week__parameter">Высота:</span>
+        <span class="product-week__value">15 см</span>
+      </li>
+    </ul>
     <img class="product-week__promo-image" src="blocks/product-week/img/triple-set-mobile@1x.jpg" width="260"
          height="315" alt="Вязанные корзинки">
     <span class="product-week__price">Цена:990 руб.</span>

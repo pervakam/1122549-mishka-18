@@ -1,5 +1,6 @@
 .production {
   margin-top: 30px;
+  margin-bottom: 58px;
   padding: 0 30px;
 
 
@@ -40,12 +41,17 @@
   &__description {
     border: 1px solid #ececec;
     border-top: none;
+    padding: 0 34px;
+
+  }
+
+  &__description-text {
     margin: 0 0;
     font-size: 13px;
     text-align: left;
     color: #444444;
-    padding: 34px 40px 29px 34px;
+    padding: 34px 0 29px 0;
     line-height: 1.85;
-
   }
+
 }

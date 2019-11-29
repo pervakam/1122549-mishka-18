@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка Каталог</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">-->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header page-wrapper">
-  <a class="page-header__logo">
+  <a class="page-header__logo" href="index.html">
     <img class="page-header__logo-image" src="blocks/header/img/logo-mobile.svg" width="86" height="36"
          alt="Магазин Мишка">
   </a>
@@ -18,7 +18,7 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="catalog.html">Каталог товаров</a>
+          <a href="">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
           <a href="form.html">Вязание на заказ</a>
@@ -120,9 +120,11 @@
       <img class="production__play" src="blocks/production/img/icon-play.svg" width="101"
            height="77" alt="Видео процесса производства">
     </div>
-    <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+    <div class="production__description">
+    <p class="production__description-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
       появляются наши товары.</p>
     <a class="production__order button" href="form.html">Сделать заказ</a>
+    </div>
   </section>
 </main>
 <footer class="page-footer page-wrapper">

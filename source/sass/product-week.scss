@@ -1,4 +1,5 @@
 .product-week {
+  padding: 0 30px;
 
   &__name {
     font-size: 25px;
@@ -13,6 +14,13 @@
     text-transform: uppercase;
   }
 
+  &__description {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+
+
   &__about,
   &__item{
     font-size: 15px;
@@ -22,7 +30,7 @@
 
   &__item {
     border-bottom: 1px solid #f1f1f1;
-    padding: 13px;
+    padding: 13px 0;
 
   }
 
@@ -45,13 +53,13 @@
 }
 
 .button {
-  display: inline-block;
+  display: block;
   font-size: 17px;
   font-weight: bold;
   color: #444444;
   text-transform: uppercase;
-  width: 259px;
   padding: 20px 0;
-  vertical-align: center;
   border: 2px solid #444444;
+  margin: 28px auto;
+  background-color: #ffffff;
 }

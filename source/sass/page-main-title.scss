@@ -1,12 +1,23 @@
 .page-main {
+
   &__intro {
     box-sizing: border-box;
     height: 300px;
     background: url("../blocks/index-title/img/hero-mobile@1x.jpg") no-repeat center;
   }
 
-  &__title {
+  &__description {
     font-size: 27px;
     font-weight: bold;
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    padding: 75px 42px;
   }
 }
