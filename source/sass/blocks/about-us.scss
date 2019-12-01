@@ -1,68 +1,76 @@
 .about-us {
-    font-size: 17px;
-    font-weight: bold;
-    text-align: left;
-    color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+  padding: 34px 30px;
+  margin: 0;
+}
 
-  &__title {
-    font-size: 25px;
+.about-us__title {
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.about-us__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-us__item {
+  margin-top: 30px;
+
+  &--eco:before {
+    display: block;
+    content: "";
+    background: url("../img/about-us/icon-feature-flower.svg") no-repeat;
+    height: 37px;
+    width: 32px;
   }
 
-  &__list {
-    list-style: none;
+  &--price:before {
+    display: block;
+    content: "";
+    background: url("../img/about-us/icon-feature-money.svg") no-repeat;
+    height: 27px;
+    width: 47px;
   }
 
-  &__item {
+  &--like:before {
+    display: block;
+    content: "";
+    background: url("../img/about-us/icon-feature-heart.svg") no-repeat;
+    height: 27px;
+    width: 34px;
+  }
 
-    &--eco:before {
-      display: block;
-      content: "";
-      background: url("../blocks/about-us/img/icon-feature-flower.svg") no-repeat;
-      height: 37px;
-      width: 32px;
-    }
+  &--handmade:before {
+    display: block;
+    content: "";
+    background: url("../img/about-us/icon-feature-ball.svg") no-repeat;
+    height: 34px;
+    width: 35px;
+  }
 
-    &--price:before {
-      display: block;
-      content: "";
-      background: url("../blocks/about-us/img/icon-feature-money.svg") no-repeat;
-      height: 27px;
-      width: 47px;
-    }
+  &--local:before {
+    display: block;
+    content: "";
+    background: url("../img/about-us/icon-feature-rocket.svg") no-repeat;
+    height: 23px;
+    width: 55px;
+  }
 
-    &--like:before {
-      display: block;
-      content: "";
-      background: url("../blocks/about-us/img/icon-feature-heart.svg") no-repeat;
-      height: 27px;
-      width: 34px;
-    }
-
-    &--handmade:before {
-      display: block;
-      content: "";
-      background: url("../blocks/about-us/img/icon-feature-ball.svg") no-repeat;
-      height: 34px;
-      width: 35px;
-    }
-
-    &--local:before {
-      display: block;
-      content: "";
-      background: url("../blocks/about-us/img/icon-feature-rocket.svg") no-repeat;
-      height: 23px;
-      width: 55px;
-    }
-
-    &--giftbox:before {
-      display: block;
-      content: "";
-      background: url("../blocks/about-us/img/icon-feature-gift.svg") no-repeat;
-      height: 32px;
-      width: 33px;
-    }
+  &--giftbox:before {
+    display: block;
+    content: "";
+    background: url("../img/about-us/icon-feature-gift.svg") no-repeat;
+    height: 32px;
+    width: 33px;
   }
 }
+
+
 
 
 

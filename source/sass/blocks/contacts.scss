@@ -1,25 +1,36 @@
 .contacts {
-
+  padding: 42px 30px 0;
   text-align: left;
   font-size: 15px;
   line-height: 2;
   color: #444444;
-
-  &__title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-  }
-
-  &__contact-type {
-    display: inline-block;
-    vertical-align: baseline;
-  }
-
-  &__contact-adress {
-    display: inline-block;
-    vertical-align: center;
-  }
-
-
 }
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.contacts__description {
+  margin: 42px 0;
+}
+
+.contacts__contact-type {
+  display: inline-block;
+  width: 48px;
+  margin-right: 28px;
+  vertical-align: top;
+}
+
+.contacts__contact-adress {
+  display: inline-block;
+  width: 180px;
+  margin: 0;
+
+  &--border {
+    border-bottom: 1px solid #63d1bb;
+  }
+}
+

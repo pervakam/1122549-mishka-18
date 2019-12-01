@@ -9,24 +9,26 @@
 </head>
 <body>
 <header class="page-header page-wrapper">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="img/header/logo-mobile.svg" width="86" height="36"
-         alt="Магазин Мишка">
-  </a>
+  <div class="page-header__logo">
+    <a class="page-header__image" href="index.html">
+      <img class="page-header__logo-picture" src="img/header/logo-mobile.svg" width="86" height="36"
+           alt="Магазин Мишка">
+    </a>
+    <button class="page-header__toggle" type="button">Открыть меню</button>
+  </div>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="">Каталог товаров</a>
+          <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
           <a href="form.html">Вязание на заказ</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--search">
           <a href="#">Поиск по сайту</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--cart">
           <a href="#">Корзина:пока пуста</a>
         </li>
       </ul>
@@ -39,7 +41,7 @@
     <ul class="catalog__list">
       <li class="catalog__item">
         <a class="catalog__item-picture" href="bunny.html">
-          <img class="catalog__item-image" src="blocks/catalog/img/photo-hare-mobile@1x.jpg" width="260" height="195"
+          <img class="catalog__item-image" src="img/catalog/photo-hare-mobile@1x.jpg" width="260" height="195"
                alt="Зайчик-попрыгайчик">
         </a>
         <div class="catalog__item-description">
@@ -64,7 +66,7 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__item-picture" href="laundry-basket.html">
-          <img class="catalog__item-image" src="blocks/catalog/img/photo-bowl-mobile@1x.jpg" width="260" height="195"
+          <img class="catalog__item-image" src="img/catalog/photo-bowl-mobile@1x.jpg" width="260" height="195"
                alt="Корзинка для белья">
         </a>
         <div class="catalog__item-description">
@@ -89,12 +91,12 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__item-picture" href="toy-basket.html">
-          <img class="catalog__item-image" src="blocks/catalog/img/photo-toys-mobile@1x.jpg" width="260" height="195"
+          <img class="catalog__item-image" src="img/catalog/photo-toys-mobile@1x.jpg" width="260" height="195"
                alt="Большая корзинка для игрушек">
         </a>
         <div class="catalog__item-description">
           <h2 class="catalog__item-title">
-            <a href="toy-basket.html">Большая корзинка для игрушек</a>
+            <a href="toy-basket.html">Большая корзинка для игрушек</a>
           </h2>
           <p class="catalog__item-parameter">Диаметр 30 см, высота 30 см</p>
         </div>
@@ -117,7 +119,7 @@
   <section class="production">
     <h2 class="production__title production__title--picture">Процесс<br>производства</h2>
     <div class="production__video">
-      <img class="production__play" src="blocks/production/img/icon-play.svg" width="101"
+      <img class="production__play" src="img/production/icon-play.svg" width="101"
            height="77" alt="Видео процесса производства">
     </div>
     <div class="production__description">
@@ -129,10 +131,10 @@
 </main>
 <footer class="page-footer page-wrapper">
   <div class="page-footer__wrapper">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">
+    <div class="page-footer__social">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <span class="visually-hidden">Мы в Инстаграм</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px"
@@ -145,8 +147,8 @@
             </svg>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <span class="visually-hidden">Мы в Фейсбук</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px"
@@ -159,8 +161,8 @@
             </svg>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <span class="visually-hidden">Мы в Твиттер</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px"
@@ -175,9 +177,9 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
+    <div class="page-footer__copyright">
+      <p class="page-footer__developed">Разработано</p>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09"
@@ -189,6 +191,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 </html>

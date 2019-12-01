@@ -9,12 +9,14 @@
 </head>
 <body>
 <header class="page-header page-wrapper">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="img/header/logo-mobile.svg" width="86" height="36"
-         alt="Магазин Мишка">
-  </a>
+  <div class="page-header__logo">
+    <a class="page-header__image" href="index.html">
+      <img class="page-header__logo-picture" src="img/header/logo-mobile.svg" width="86" height="36"
+           alt="Магазин Мишка">
+    </a>
+    <button class="page-header__toggle" type="button">Открыть меню</button>
+  </div>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -23,10 +25,10 @@
         <li class="main-nav__item">
           <a href="form.html">Вязание на заказ</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--search">
           <a href="#">Поиск по сайту</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--cart">
           <a href="#">Корзина:пока пуста</a>
         </li>
       </ul>
@@ -103,10 +105,10 @@
 </main>
 <footer class="page-footer page-wrapper">
   <div class="page-footer__wrapper">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">
+    <div class="page-footer__social">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <span class="visually-hidden">Мы в Инстаграм</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px"
@@ -119,8 +121,8 @@
             </svg>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <span class="visually-hidden">Мы в Фейсбук</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px"
@@ -133,8 +135,8 @@
             </svg>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <span class="visually-hidden">Мы в Твиттер</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px"
@@ -149,9 +151,9 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
+    <div class="page-footer__copyright">
+      <p class="page-footer__developed">Разработано</p>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09"

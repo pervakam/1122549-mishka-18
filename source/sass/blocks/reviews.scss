@@ -1,64 +1,76 @@
 .reviews {
+  padding: 30px;
+}
 
-  &__title {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
-    color: #000000;
+.reviews__title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+}
+
+.reviews__comment {
+  margin: 36px 0;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 2;
+  text-align: left;
+  color: #444444;
+  margin: 0 0 40px;
+}
+
+.reviews__author-name {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+  font-style: normal;
+  line-height: 1.41;
+}
+
+.reviews__author-account {
+  display: block;
+  font-size: 17px;
+  text-align: left;
+  color: #000000;
+  line-height: 1.76;
+}
+
+.reviews__buttons {
+  align-items: center;
+  border: 1px solid #ececec;
+  margin-bottom: 38px;
+  width: 261px;
+  height: 52px;
+  padding: auto 0;
+
+}
+
+.reviews__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  height: 52px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+
+
+  &--prev {
+    background: url("../img/reviews/icon-left-arrow.svg") no-repeat 50% 50%;
+    border-right: 1px solid #ececec;
   }
 
-  &__text {
-    font-size: 15px;
-    line-height: 2;
-    text-align: left;
-    color: #444444;
+  &--next {
+    background: url("../img/reviews/icon-right-arrow.svg") no-repeat 50% 50%;
+    margin-left: -5px;
   }
-
-  &__author-name {
-    font-size: 17px;
-    font-weight: bold;
-    text-align: left;
-    color: #000000;
-    font-style: normal;
-  }
-
-  &__autor-account {
-    font-size: 17px;
-    text-align: left;
-    color: #000000;
-  }
-
-  &__buttons {
-    align-items: center;
-    border: 1px solid #ececec;
-    margin: 0 auto;
-    width: 261px;
-    height: 52px;
-    padding: auto 0;
-
-  }
-
-    &__item {
-      display: inline-block;
-      vertical-align: middle;
-      width: 130px;
-      height: 52px;
-      background-color: #ffffff;
-      color: #000000;
-      border: none;
+}
 
 
-      &--prev {
-        background: url("../blocks/reviews/img/icon-left-arrow.svg") no-repeat 50% 50%;
-        border-right: 1px solid #ececec;
-      }
 
-      &--next {
-        background: url("../blocks/reviews/img/icon-right-arrow.svg") no-repeat 50% 50%;
-        margin-left: -5px;
-      }
-    }
-
-
-  }
 
