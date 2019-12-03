@@ -10,7 +10,6 @@
 .about-us__title {
   font-size: 25px;
   font-weight: bold;
-
 }
 
 .about-us__list {
@@ -21,7 +20,7 @@
 .about-us__item {
   margin-top: 30px;
 
-  &--eco:before {
+  &--eco::before {
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-flower.svg") no-repeat;
@@ -29,7 +28,7 @@
     width: 32px;
   }
 
-  &--price:before {
+  &--price::before {
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-money.svg") no-repeat;
@@ -37,7 +36,7 @@
     width: 47px;
   }
 
-  &--like:before {
+  &--like::before {
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-heart.svg") no-repeat;
@@ -45,7 +44,7 @@
     width: 34px;
   }
 
-  &--handmade:before {
+  &--handmade::before {
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-ball.svg") no-repeat;
@@ -53,7 +52,7 @@
     width: 35px;
   }
 
-  &--local:before {
+  &--local::before {
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-rocket.svg") no-repeat;
@@ -61,7 +60,7 @@
     width: 55px;
   }
 
-  &--giftbox:before {
+  &--giftbox::before {
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-gift.svg") no-repeat;

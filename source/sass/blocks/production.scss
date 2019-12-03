@@ -16,7 +16,7 @@
   line-height: 1.41;
 
 
-  &--picture:before {
+  &--picture::before {
     display: block;
     content: "";
     background: url("../img/production/icon-video.svg") no-repeat;
@@ -31,7 +31,6 @@
   height: 150px;
   background: url("../img/production/video-mobile@1x.jpg") no-repeat left;
   width: 260px;
-
 }
 
 .production__play {
@@ -42,7 +41,6 @@
   border: 1px solid $gray;
   border-top: none;
   padding: 0 34px 33px;
-
 }
 
 .production__description-text {

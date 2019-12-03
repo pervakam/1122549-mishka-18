@@ -17,7 +17,7 @@
   &--search {
     padding: 32px 32px 30px;
 
-    &:before {
+    &::before {
       display: block;
       content: "";
       background: url("../img/header/icon-search.svg") no-repeat;
@@ -31,7 +31,7 @@
   &--cart {
     padding: 32px 32px 30px;
 
-    &:before {
+    &::before {
       display: block;
       content: "";
       background: url("../img/header/icon-cart.svg") no-repeat;
@@ -39,7 +39,6 @@
       height: 18px;
       margin-right: 25px;
       opacity: 0.2;
-
     }
   }
 }

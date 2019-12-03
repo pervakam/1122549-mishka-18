@@ -26,7 +26,7 @@
   &--interior {
     padding: 23px 36px 18px 29px;
 
-    &:after {
+    &::after {
       display: block;
       content: "";
       background: url("../img/catalog-section/icon-interior.svg") no-repeat;
@@ -39,7 +39,7 @@
   &--toy {
     padding: 21px 27px 22px 29px;
 
-    &:after {
+    &::after {
       display: block;
       content: "";
       background: url("../img/catalog-section/icon-toy.svg") no-repeat;

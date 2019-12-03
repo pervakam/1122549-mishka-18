@@ -1,3 +1,10 @@
+.page-header {
+  margin: 0 auto;
+  width: 320px;
+  border-left: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+}
+
 .page-header__logo {
   margin: 22px 0 22px 116px;
   display: flex;
