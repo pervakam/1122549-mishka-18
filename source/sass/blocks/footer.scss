@@ -1,0 +1,36 @@
+.page-footer {
+  margin: 0 auto;
+  width: 320px;
+  border-left: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+}
+
+.page-footer__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 25px 30px;
+  margin: 0;
+}
+
+.page-footer__item {
+  margin: auto 20px;
+}
+
+.page-footer {
+  background-color: $gray-light;
+  margin: 0 auto;
+}
+
+.page-footer__copyright {
+  padding: 22px 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__developed {
+  font-size: 19px;
+  font-weight: bold;
+  margin: auto 0;
+}
