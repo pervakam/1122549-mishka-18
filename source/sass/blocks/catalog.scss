@@ -10,7 +10,7 @@
 }
 
 .catalog__item {
-  border: 1px solid #ececec;
+  border: 1px solid $gray;
   margin-top: 30px;
 }
 
@@ -36,10 +36,10 @@
 
 .catalog__item-parameter {
   font-size: 13px;
-  color: #444444;
+  color: $grayish-brown;
   margin: 0;
   padding-bottom: 27px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $gray;
 }
 
 .catalog__item-cost {

@@ -5,11 +5,11 @@
 }
 
 .catalog-section__item-interior {
-  background-color: #63d1bb;
+  background-color: $seafoam-blue;
 }
 
 .catalog-section__item-toy {
-  background-color: #56c3b2;
+  background-color: $greeny-blue;
 }
 
 
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
-  color: #ffffff;
+  color: $main-color;
   font-size: 19px;
   line-height: 1.26;
   font-weight: bold;

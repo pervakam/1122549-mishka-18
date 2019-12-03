@@ -3,13 +3,13 @@
   text-align: left;
   font-size: 15px;
   line-height: 2;
-  color: #444444;
+  color: $grayish-brown;
 }
 
 .contacts__title {
   font-size: 18px;
   font-weight: bold;
-  color: #000000;
+  color: $black;
   margin: 0;
 }
 
@@ -30,7 +30,7 @@
   margin: 0;
 
   &--border {
-    border-bottom: 1px solid #63d1bb;
+    border-bottom: 1px solid $seafoam-blue;
   }
 }
 

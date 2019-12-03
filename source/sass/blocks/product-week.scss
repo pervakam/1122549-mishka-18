@@ -15,7 +15,7 @@
   text-align: left;
   font-size: 17px;
   font-weight: bold;
-  color: #63d1bb;
+  color: $seafoam-blue;
   text-transform: uppercase;
   margin: 8px 0 30px;
 }
@@ -33,12 +33,12 @@
 .product-week__item {
   font-size: 15px;
   text-align: left;
-  color: #444444;
+  color: $grayish-brown;
   margin: 0;
 }
 
 .product-week__item {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid $gray-light;
   padding: 13px 0;
   display: flex;
   justify-content: left;
@@ -62,7 +62,7 @@
   padding: 29px 0;
   font-size: 17px;
   font-weight: bold;
-  color: #444444;
+  color: $grayish-brown;
 
 }
 
