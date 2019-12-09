@@ -9,3 +9,8 @@
   margin: 0 auto;
   background-color: $main-color;
 }
+
+
+@media (min-width: $tablet-width) {
+  padding: 18px 0;
+}
