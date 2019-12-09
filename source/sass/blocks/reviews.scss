@@ -2,6 +2,10 @@
   padding: 30px;
 }
 
+.reviews__pic {
+  display: none;
+}
+
 .reviews__title {
   font-size: 25px;
   font-weight: bold;
@@ -67,5 +71,128 @@
   &--next {
     background: url("../img/reviews/icon-right-arrow.svg") no-repeat 50% 50%;
     margin-left: -5px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .reviews {
+    padding: 83px 50px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .reviews__pic {
+    display: block;
+    margin-left: -50px;
+  }
+
+  .reviews__list {
+    display: block;
+    margin: 75px 0 0 -300px;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+  }
+
+  .reviews__comment {
+    margin: 48px 0;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 1.8;
+    width: 645px;
+    margin-bottom: 58px;
+  }
+
+  .reviews__author-name,
+  .reviews__author-account {
+    font-size: 18px;
+  }
+
+  .reviews__write {
+    margin: 75px 0 0 -153px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .reviews__buttons {
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    padding: auto 0;
+    display: flex;
+    justify-content: center;
+    border: none;
+    order: 2;
+  }
+
+  .reviews__write-button {
+    order: 1;
+    width: 100%;
+  }
+
+  .reviews__item {
+    flex-grow: 1;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: $main-color;
+    color: $black;
+    border: none;
+
+    &--prev {
+      background: url("../img/reviews/icon-left-arrow.svg") no-repeat 50% 50%;
+    }
+
+    &--next {
+      background: url("../img/reviews/icon-right-arrow.svg") no-repeat 50% 50%;
+    }
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .reviews {
+    padding: 87px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+  }
+
+  .reviews__pic {
+    margin: 0;
+  }
+
+  .reviews__list {
+    margin: 73px 0 0 -255px;
+  }
+
+  .reviews__text {
+    line-height: 1.76;
+    width: 770px;
+    margin-bottom: 40px;
+  }
+
+  .reviews__author-name,
+  .reviews__author-account {
+    font-size: 17px;
+  }
+
+  .reviews__comment {
+    margin-bottom: 0;
+  }
+
+  .reviews__buttons {
+    margin-bottom: 95px;
   }
 }

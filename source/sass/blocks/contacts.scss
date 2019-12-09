@@ -33,3 +33,83 @@
     border-bottom: 1px solid $seafoam-blue;
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .contacts {
+    padding: 52px 47px 16px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      display: block;
+      content: "";
+      background: url("../img/contacts/icon-flag.svg") no-repeat;
+      height: 81px;
+      width: 47px;
+    }
+  }
+
+  .contacts__description {
+    margin-top: 30px;
+  }
+
+  .contacts__contact-type {
+    width: 55px;
+    margin-left: 3px;
+    margin-right: 18px;
+    vertical-align: top;
+  }
+
+  .contacts__contact-adress {
+    vertical-align: top;
+    margin-right: 17px;
+    width: 230px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .contacts {
+    padding: 52px 10px 16px 170px;
+    font-size: 17px;
+    line-height: 1.76;
+    width: 310px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    justify-content: left;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      background: url("../img/contacts/icon-flag.svg") no-repeat;
+      height: 81px;
+      width: 47px;
+      margin-left: -100px;
+      margin-right: 50px;
+    }
+  }
+
+  .contacts__contact-type {
+    margin-bottom: 35px;
+    margin-right: 15px;
+  }
+
+  .contacts__contact-adress {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
