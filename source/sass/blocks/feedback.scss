@@ -1,3 +1,17 @@
 .feedback {
   padding: 39px 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    padding: 50px 271px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding: 0 695px 0 225px;
+    margin-top: -130px;
+    margin-bottom: 105px;
+  }
+}

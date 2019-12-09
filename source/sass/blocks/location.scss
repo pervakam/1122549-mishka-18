@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .location {
+    padding: 75px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
