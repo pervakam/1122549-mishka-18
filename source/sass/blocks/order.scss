@@ -24,3 +24,12 @@
     margin: 0;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .order__description {
+    padding: 0 225px 8px;
+    margin-top: -6px;
+  }
+
+}
