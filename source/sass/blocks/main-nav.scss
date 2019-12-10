@@ -149,10 +149,12 @@
       font-size: 15px;
       font-weight: normal;
       padding: 23px 0 0 144px;
+
     }
 
     &--new {
       display: none;
+
     }
 
     &--sale {
@@ -262,6 +264,7 @@
       font-size: 15px;
       margin: 0;
       padding: 23px 0 0 50px;
+      background-color: transparent;
     }
 
     &--sale {
@@ -270,6 +273,7 @@
       font-size: 15px;
       margin: 0;
       padding: 23px 0 0 67px;
+      background-color: transparent;
     }
 
     &--delivery {
@@ -277,7 +281,7 @@
       font-size: 15px;
       font-weight: normal;
       padding: 23px 0 0 510px;
-
+      background-color: transparent;
     }
   }
 

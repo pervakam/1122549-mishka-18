@@ -1,10 +1,26 @@
-.filters {
+.order {
   margin: 30px;
 }
 
-.filters__description {
+.order__description {
   font-size: 13px;
   line-height: 1.85;
   text-align: left;
   color: $grayish-brown;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .order {
+    padding: 0;
+    margin: 0;
+  }
+
+  .order__description {
+    padding: 0 50px 10px;
+    font-size: 17px;
+    line-height: 1.76;
+    margin: 0;
+  }
 }

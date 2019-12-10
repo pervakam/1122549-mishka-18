@@ -24,14 +24,20 @@ html {
 
 @media (min-width: $tablet-width) {
   body {
-    background: url("../img/mishka-catalog-tablet.jpg") no-repeat 50% 0;
+    background: url("../img/mishka-form-tablet.jpg") no-repeat 50% 0;
+    //background: url("../img/mishka-catalog-tablet.jpg") no-repeat 50% 0;
+    //background: url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   body {
-    background: url("../img/mishka-catalog-desktop.jpg") no-repeat 50% 0;
+    background: url("../img/mishka-form-desktop.jpg") no-repeat 50% 0;
+    //background: url("../img/mishka-catalog-desktop.jpg") no-repeat 50% 0;
+    //background: url("../img/mishka-index-desktop.jpg") no-repeat 50% 0;
+
+
   }
 }
 
