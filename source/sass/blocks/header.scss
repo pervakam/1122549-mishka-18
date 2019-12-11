@@ -1,16 +1,12 @@
 .page-header {
   margin: 0 auto;
   width: 320px;
-  border-left: 1px solid $gray-light;
-  border-right: 1px solid $gray-light;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     margin: 0 auto;
     width: 768px;
-    border-left: 1px solid $gray-light;
-    border-right: 1px solid $gray-light;
   }
 }
 
@@ -18,7 +14,5 @@
   .page-header {
     margin: 0 auto;
     width: 1150px;
-    border-left: 1px solid $gray-light;
-    border-right: 1px solid $gray-light;
   }
 }
