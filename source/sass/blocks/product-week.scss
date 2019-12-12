@@ -1,6 +1,8 @@
 .product-week {
-  margin: 0;
+  margin: 0 auto;
   padding: 34px 30px;
+  box-sizing: border-box;
+  width: 320px;
 }
 
 .product-week__name {
@@ -66,7 +68,9 @@
 
 @media (min-width: $tablet-width) {
   .product-week {
-    margin: 0;
+    box-sizing: border-box;
+    width: 768px;
+    margin: 0 auto;
     padding: 45px 47px;
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +116,9 @@
 @media (min-width: $desktop-width) {
 
   .product-week {
-    margin: 0;
+    box-sizing: border-box;
+    width: 1150px;
+    margin: 0 auto;
     padding: 70px 50px 70px 97px;
     display: flex;
     flex-wrap: wrap;

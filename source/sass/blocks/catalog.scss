@@ -1,7 +1,9 @@
 .catalog {
   padding: 0 30px;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 79px;
+  box-sizing: border-box;
+  width: 320px;
 }
 
 .catalog__list {
@@ -56,6 +58,8 @@
 
   .catalog {
     padding: 0 50px;
+    box-sizing: border-box;
+    width: 768px;
   }
 
   .catalog__item {
@@ -108,6 +112,11 @@
 
 
 @media (min-width: $desktop-width) {
+
+  .catalog {
+    width: 1150px;
+  }
+
   .catalog__list {
     list-style: none;
     margin: 0 auto;

@@ -1,5 +1,8 @@
 .reviews {
   padding: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 320px;
 }
 
 .reviews__pic {
@@ -78,6 +81,9 @@
 @media (min-width: $tablet-width) {
 
   .reviews {
+    box-sizing: border-box;
+    width: 768px;
+    margin: 0 auto;
     padding: 83px 50px;
     display: flex;
     justify-content: left;
@@ -160,9 +166,12 @@
 @media (min-width: $desktop-width) {
 
   .reviews {
+    box-sizing: border-box;
+    width: 1150px;
     padding: 87px 50px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .reviews__title {

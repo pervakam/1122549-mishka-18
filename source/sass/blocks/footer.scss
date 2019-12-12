@@ -1,7 +1,12 @@
 .page-footer {
-  margin: 0 auto;
-  width: 320px;
+  width: auto;
   background-color: $gray-light;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 320px;
 }
 
 .page-footer__list {
@@ -31,11 +36,11 @@
 
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    width: 768px;
-  }
+
 
   .page-footer__wrapper {
+    box-sizing: border-box;
+    width: 768px;
     display: flex;
     justify-content: space-between;
     padding: 60px 50px;
@@ -64,7 +69,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+
+  .page-footer__wrapper {
+    margin: 0 auto;
+    box-sizing: border-box;
     width: 1150px;
   }
 }

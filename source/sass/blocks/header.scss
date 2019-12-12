@@ -1,18 +1,18 @@
 .page-header {
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     margin: 0 auto;
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     margin: 0 auto;
-    width: 1150px;
+    min-width: 1150px;
   }
 }

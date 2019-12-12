@@ -1,11 +1,19 @@
 .filter__part {
+  width: 320px;
+  box-sizing: border-box;
   border: none;
-  border-top: 1px solid $seafoam-blue;
-  margin: 0;
-  padding: 0;
+  //border-top: 1px solid $seafoam-blue;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 30px;
   text-align: left;
   font-size: 17px;
   font-weight: bold;
+}
+
+.filter__wrapper {
+  margin: 0;
+  padding: 0;
 }
 
 .filter__part-title {
@@ -13,36 +21,43 @@
   font-weight: bold;
   color: $seafoam-blue;
   text-transform: uppercase;
-
-  &--type {
-    padding-right: 27px;
-  }
-
-  &--color {
-    padding-right: 18px;
-  }
-
-  &--name {
-    padding-right: 22px;
-  }
-
-  &--tel {
-    padding-right: 31px;
-  }
-
-  &--mail {
-    padding-right: 23px;
-  }
-
-  &--extra {
-    padding-right: 25px;
-  }
+  padding: 0;
+  margin: 0;
 }
 
 .filter__list-type,
 .filter__list-color,
 .filter__list-name {
   list-style: none;
+  font-size: 17px;
+  line-height: 1.06;
+}
+
+.filter__option-type {
+  margin-bottom: 24px;
+}
+
+.filter__option-color {
+  margin-bottom: 43px;
+}
+
+.filter__item-name {
+  margin-bottom: 22px;
+}
+
+.filter__list-type {
+  margin: 0;
+  padding: 32px 0 0 50px;
+}
+
+.filter__list-color {
+  margin: 0;
+  padding: 35px 0 0 50px;
+}
+
+.filter__list-name {
+  margin: 0;
+  padding: 26px 0 0;
 }
 
 .filter__label {
@@ -52,10 +67,11 @@
 .filter__input,
 .filter__input-tel,
 .filter__input-mail {
+  padding: 0;
   width: 100%;
   border: none;
   border-bottom: 2px solid $black;
-  height: 52px;
+  height: 50px;
 
   &::placeholder {
     font-size: 17px;
@@ -64,10 +80,22 @@
 }
 
 .filter__extra {
+  box-sizing: border-box;
   font-size: 17px;
   color: $grayish-light;
+  line-height: 1.06;
+
+  padding: 17px 17px 0;
+
   border: 2px solid $black;
   width: 100%;
+  min-height: 142px;
+}
+
+.filter__end {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 320px;
 }
 
 .filter__legend {
@@ -98,9 +126,14 @@
     font-size: 19px;
     padding: 64px 51px 12px;
     border: none;
+    width: 768px;
+    margin: 0 auto;
 
     &:nth-child(2) {
       background-color: $gray-light;
+      width: auto;
+      padding: 0;
+      display: block;
     }
 
     &:nth-child(3) {
@@ -108,19 +141,49 @@
     }
 
     &:nth-child(4) {
-      padding: 64px 51px 13px;
+      padding: 0;
       background-color: $gray-light;
+      width: auto;
+      display: block;
     }
 
     &:nth-child(5) {
-      padding: 24px 51px 50px;
+      padding: 0;
       background-color: $gray-light;
+      width: auto;
+      display: block;
     }
 
     &:nth-child(6) {
       padding: 52px 51px 53px;
     }
   }
+
+  .filter__wrapper-color,
+  .filter__wrapper-tel,
+  .filter__wrapper-mail {
+    display: flex;
+    justify-content: left;
+    box-sizing: border-box;
+    font-size: 19px;
+    border: none;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .filter__wrapper-color {
+    padding: 64px 51px 12px;
+  }
+
+  .filter__wrapper-tel {
+    padding: 64px 51px 13px;
+
+  }
+
+  .filter__wrapper-mail {
+    padding: 24px 51px 50px;
+  }
+
 
   .filter__part-title {
     margin: 1px 199px 0 0;
@@ -224,6 +287,10 @@
   }
 
   .filter__end {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 768px;
+
     display: flex;
     justify-content: space-between;
     padding: 0 51px 50px 50px;
@@ -251,23 +318,41 @@
 
   .filter__part {
     padding-left: 112px;
-
+    width: 1150px;
+    margin: 0 auto;
 
     &:nth-child(3) {
       padding: 64px 112px 12px;
     }
 
-    &:nth-child(4) {
-      padding: 64px 225px 13px 112px;
-    }
-
-    &:nth-child(5) {
-      padding: 26px 225px 50px 112px;
-    }
-
     &:nth-child(6) {
       padding: 50px 225px 50px 112px;
     }
+  }
+
+  .filter__wrapper-color,
+  .filter__wrapper-tel,
+  .filter__wrapper-mail {
+    display: flex;
+    justify-content: left;
+    box-sizing: border-box;
+    font-size: 19px;
+    border: none;
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .filter__wrapper-color {
+    padding: 60px 0 12px 112px;
+  }
+
+  .filter__wrapper-tel {
+    padding: 64px 225px 13px 112px;
+
+  }
+
+  .filter__wrapper-mail {
+    padding: 26px 225px 50px 112px;
   }
 
   .filter__part-title {
@@ -296,8 +381,12 @@
     }
   }
 
+  .filter__option-type {
+    margin-bottom: 60px;
+  }
+
   .filter__option-color {
-    margin-bottom: 55px;
+    margin-bottom: 65px;
 
 
     &:nth-child(1) {
@@ -322,6 +411,9 @@
   }
 
   .filter__end {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1150px;
     padding: 0 225px 50px 225px;
   }
 }
