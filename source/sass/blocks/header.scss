@@ -1,18 +1,18 @@
 .page-header {
   margin: 0 auto;
-  width: 320px;
-  border-left: 1px solid $gray-light;
-  border-right: 1px solid $gray-light;
+  min-width: 320px;
 }
 
-.page-header__logo {
-  margin: 22px 0 22px 116px;
-  display: flex;
-  justify-content: space-between;
-  vertical-align: middle;
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin: 0 auto;
+    min-width: 768px;
+  }
 }
 
-.page-header__toggle {
-  height: 20px;
-  width: 21px;
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin: 0 auto;
+    min-width: 1150px;
+  }
 }

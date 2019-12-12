@@ -9,3 +9,10 @@
   margin: 0 auto;
   background-color: $main-color;
 }
+
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 17px 0;
+  }
+}
