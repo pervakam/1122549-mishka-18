@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
   <nav class="main-nav">
+    <div class="main-nav__item main-nav__item--logo">
+      <a class="main-nav__image"><span class="visually-hidden">Магазин Мишка</span></a>
+      <button class="main-nav__toggle" type="button" value="Открыть меню"></button>
+    </div>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--logo">
-          <a class="main-nav__image"><span class="visually-hidden">Магазин Мишка</span></a>
-          <button class="main-nav__toggle" type="button" value="Открыть меню"></button>
-        </li>
         <li class="main-nav__item main-nav__item--catalog">
           <a href="catalog.html">Каталог товаров</a>
         </li>
@@ -44,18 +46,18 @@
     <h1 class="page-main__description">Милые штуки ручной<br>работы для дома</h1>
   </div>
   <section class="catalog-section">
-      <ul class="catalog-section__list">
-        <li class="catalog-section__item-interior">
-          <a class="catalog-section__title catalog-section__title--interior" href="#">
-            <p class="catalog-section__name">Предметы<br>интерьера</p>
-          </a>
-        </li>
-        <li class="catalog-section__item-toy">
-          <a class="catalog-section__title catalog-section__title--toy" href="#">
-            <p class="catalog-section__name">Детские<br>игрушки</p>
-          </a>
-        </li>
-      </ul>
+    <ul class="catalog-section__list">
+      <li class="catalog-section__item-interior">
+        <a class="catalog-section__title catalog-section__title--interior" href="#">
+          <p class="catalog-section__name">Предметы<br>интерьера</p>
+        </a>
+      </li>
+      <li class="catalog-section__item-toy">
+        <a class="catalog-section__title catalog-section__title--toy" href="#">
+          <p class="catalog-section__name">Детские<br>игрушки</p>
+        </a>
+      </li>
+    </ul>
   </section>
   <section class="product-week">
     <div class="product-week__title">
