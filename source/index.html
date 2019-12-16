@@ -9,13 +9,14 @@
 </head>
 <body>
 <header class="page-header">
-  <nav class="main-nav">
-    <div class="main-nav__item main-nav__item--logo">
-      <a class="main-nav__image"><span class="visually-hidden">Магазин Мишка</span></a>
-      <button class="main-nav__toggle" type="button" value="Открыть меню"></button>
-    </div>
+  <nav class="main-nav main-nav--closed main-nav--opened">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--logo">
+          <a class="main-nav__image"><span class="visually-hidden">Магазин Мишка</span></a>
+          <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--opened" type="button"
+                  value="Открыть меню"></button>
+        </li>
         <li class="main-nav__item main-nav__item--catalog">
           <a href="catalog.html">Каталог товаров</a>
         </li>
@@ -49,50 +50,52 @@
     <ul class="catalog-section__list">
       <li class="catalog-section__item-interior">
         <a class="catalog-section__title catalog-section__title--interior" href="#">
-          <p class="catalog-section__name">Предметы<br>интерьера</p>
+          <p class="catalog-section__name catalog-section__name--interior">Предметы<br>интерьера</p>
         </a>
       </li>
       <li class="catalog-section__item-toy">
         <a class="catalog-section__title catalog-section__title--toy" href="#">
-          <p class="catalog-section__name">Детские<br>игрушки</p>
+          <p class="catalog-section__name catalog-section__name--toy">Детские<br>игрушки</p>
         </a>
       </li>
     </ul>
   </section>
   <section class="product-week">
-    <div class="product-week__title">
-      <h2 class="product-week__name">Вязаные корзинки</h2>
-      <span class="product-week__type">Товар недели</span>
-    </div>
-    <div class="product-week__info">
-      <p class="product-week__about">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
-        размерах</p>
-      <ul class="product-week__description">
-        <li class="product-week__item">
-          <span class="product-week__parameter">Цвет:</span>
-          <span class="product-week__value">«Тиффани»/серый</span>
-        </li>
-        <li class="product-week__item">
-          <span class="product-week__parameter">Диаметр:</span>
-          <span class="product-week__value">25 см</span>
-        </li>
-        <li class="product-week__item">
-          <span class="product-week__parameter">Высота:</span>
-          <span class="product-week__value">15 см</span>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/product-week/triple-set-desktop@1x.jpg">
-        <source media="(min-width: 768px)" srcset="img/product-week/triple-set-tablet@1x.jpg">
-        <source media="(min-width: 320px)" srcset="img/product-week/triple-set-mobile@1x.jpg">
-        <img class="product-week__promo-image" src="img/product-week/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
-      </picture>
-    </div>
-    <div class="product-week__order">
-      <span class="product-week__price">Цена: 990 руб.</span>
-      <a class="button" href="form.html">Заказать</a>
+    <div class="product-week__wrapper">
+      <div class="product-week__title">
+        <h2 class="product-week__name">Вязаные корзинки</h2>
+        <span class="product-week__type">Товар недели</span>
+      </div>
+      <div class="product-week__info">
+        <p class="product-week__about">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх
+          размерах</p>
+        <ul class="product-week__description">
+          <li class="product-week__item">
+            <span class="product-week__parameter">Цвет:</span>
+            <span class="product-week__value">&laquo;Тиффани&raquo;/серый</span>
+          </li>
+          <li class="product-week__item">
+            <span class="product-week__parameter">Диаметр:</span>
+            <span class="product-week__value">25 см</span>
+          </li>
+          <li class="product-week__item">
+            <span class="product-week__parameter">Высота:</span>
+            <span class="product-week__value">15 см</span>
+          </li>
+        </ul>
+      </div>
+      <div class="product-week__promo-image">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/product-week/triple-set-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/product-week/triple-set-tablet@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/product-week/triple-set-mobile@1x.jpg">
+          <img src="img/product-week/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+        </picture>
+      </div>
+      <div class="product-week__order">
+        <span class="product-week__price">Цена: 990 руб.</span>
+        <a class="button" href="form.html">Заказать</a>
+      </div>
     </div>
   </section>
   <section class="about-us">
@@ -149,7 +152,7 @@
     </div>
   </section>
   <div class="feedback">
-    <a class="button" href="feedback.html">Напишите нам</a>
+    <a class="feedback__button button" href="feedback.html">Напишите нам</a>
   </div>
 </main>
 <footer class="page-footer">

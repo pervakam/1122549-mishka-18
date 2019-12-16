@@ -1,9 +1,10 @@
 .about-us {
   font-size: 17px;
+  line-height: 1.18;
   font-weight: bold;
   text-align: left;
   color: $black;
-  padding: 34px 30px;
+  padding: 30px 28px;
   margin: 0 auto;
   box-sizing: border-box;
   width: 320px;
@@ -12,6 +13,7 @@
 .about-us__title {
   font-size: 25px;
   font-weight: bold;
+  margin: 0;
 }
 
 .about-us__list-left,
@@ -21,9 +23,12 @@
 }
 
 .about-us__item {
-  margin-top: 30px;
+  margin-top: 31px;
+  margin-left: 1px;
 
   &--eco::before {
+    margin-left: 9px;
+    margin-bottom: 16px;
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-flower.svg") no-repeat;
@@ -32,22 +37,34 @@
   }
 
   &--price::before {
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-bottom: 26px;
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-money.svg") no-repeat;
     height: 27px;
-    width: 47px;
+    width: 49px;
   }
 
-  &--like::before {
-    display: block;
-    content: "";
-    background: url("../img/about-us/icon-feature-heart.svg") no-repeat;
-    height: 27px;
-    width: 34px;
+  &--like {
+    margin-top: 35px;
+
+
+    &::before {
+      margin-bottom: 21px;
+      margin-left: 8px;
+      display: block;
+      content: "";
+      background: url("../img/about-us/icon-feature-heart.svg") no-repeat;
+      height: 27px;
+      width: 34px;
+    }
   }
 
   &--handmade::before {
+    margin-left: 3px;
+    margin-bottom: 18px;
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-ball.svg") no-repeat;
@@ -55,15 +72,24 @@
     width: 35px;
   }
 
-  &--local::before {
+  &--local {
+    margin-top: 33px;
+    margin-left: 2px;
+
+  &::before {
+    margin-left: -6px;
+    margin-bottom: 27px;
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-rocket.svg") no-repeat;
     height: 23px;
     width: 55px;
   }
+}
 
   &--giftbox::before {
+    margin-left: 3px;
+    margin-bottom: 20px;
     display: block;
     content: "";
     background: url("../img/about-us/icon-feature-gift.svg") no-repeat;

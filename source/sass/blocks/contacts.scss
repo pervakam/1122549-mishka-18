@@ -1,5 +1,5 @@
 .contacts {
-  padding: 42px 30px 0;
+  padding: 32px 29px 0;
   text-align: left;
   font-size: 15px;
   line-height: 2;
@@ -14,13 +14,15 @@
 }
 
 .contacts__description {
-  margin: 42px 0;
+  margin: 0 0 29px;
 }
 
 .contacts__contact-type {
   display: inline-block;
   width: 48px;
-  margin-right: 28px;
+  margin-top: 23px;
+  margin-right: 26px;
+  margin-bottom: 7px;
   vertical-align: top;
 }
 
@@ -28,6 +30,8 @@
   display: inline-block;
   width: 180px;
   margin: 0;
+  margin-top: 23px;
+  margin-bottom: 7px;
 
   &--border {
     border-bottom: 1px solid $seafoam-blue;
