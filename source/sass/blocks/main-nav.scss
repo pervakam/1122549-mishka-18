@@ -76,7 +76,7 @@
   font-size: 17px;
   font-weight: bold;
   text-align: left;
-  //box-shadow: 0px 1px 0 0 $gray, inset 0px 1px 0 0 $gray;
+  box-shadow: 0px 1px 0 0 $gray, inset 0px 1px 0 0 $gray;
   padding: 29px 0 31px 75px;
   margin: auto 0;
 
@@ -152,7 +152,7 @@
       order: 1;
       min-width: 371px;
       border-right: 1px solid $gray;
-      padding: 22px 0 0 48px;
+      padding: 2px 0 0 48px;
     }
 
     &--catalog {
@@ -265,7 +265,6 @@
     min-height: 88px;
     box-shadow: none;
 
-
     &--logo {
       margin: 0;
       order: 3;
@@ -278,7 +277,7 @@
       order: 1;
       font-size: 17px;
       margin: 0;
-      padding: 34px 0 0 49px;
+      padding: 33px 0 0 49px;
       min-width: 235px;
       border-right: 1px solid $gray;
       //border-bottom: 1px solid $gray;
@@ -288,14 +287,14 @@
       order: 2;
       font-size: 17px;
       margin: 0;
-      padding: 34px 0 0 34px;
+      padding: 33px 0 0 34px;
       //border-bottom: 1px solid $gray;
     }
 
     &--search {
       order: 4;
       margin: 0;
-      padding: 35px 0 0 33px;
+      padding: 34px 0 0 33px;
       min-width: 83px;
       border-right: 1px solid $gray;
       //border-bottom: 1px solid $gray;
@@ -313,7 +312,7 @@
     &--cart {
       order: 5;
       margin: 0;
-      padding: 34px 0 30px 31px;
+      padding: 33px 0 30px 31px;
       min-width: 314px;
       //border-bottom: 1px solid $gray;
 
@@ -333,7 +332,7 @@
       order: 6;
       font-size: 15px;
       margin: 0;
-      padding: 23px 0 0 50px;
+      padding: 22px 0 0 50px;
       background-color: transparent;
     }
 
@@ -342,7 +341,7 @@
       order: 7;
       font-size: 15px;
       margin: 0;
-      padding: 23px 0 0 67px;
+      padding: 22px 0 0 61px;
       background-color: transparent;
     }
 
@@ -350,7 +349,7 @@
       order: 8;
       font-size: 15px;
       font-weight: normal;
-      padding: 23px 0 0 510px;
+      padding: 21px 0 0 505px;
       background-color: transparent;
     }
   }

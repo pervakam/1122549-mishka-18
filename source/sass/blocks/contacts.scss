@@ -41,13 +41,14 @@
 @media (min-width: $tablet-width) {
 
   .contacts {
-    padding: 52px 47px 16px;
+    padding: 47px 0 21px 47px;
     font-size: 17px;
     line-height: 1.76;
   }
 
   .contacts__title {
     font-size: 43px;
+    margin-left: -1px;
     display: flex;
     justify-content: space-between;
 
@@ -57,11 +58,14 @@
       background: url("../img/contacts/icon-flag.svg") no-repeat;
       height: 81px;
       width: 47px;
+      margin-top: -1px;
+      margin-right: 53px;
     }
   }
 
   .contacts__description {
-    margin-top: 30px;
+    margin-top: 8px;
+    line-height: 1.76;
   }
 
   .contacts__contact-type {
@@ -72,9 +76,14 @@
   }
 
   .contacts__contact-adress {
+    box-sizing: content-box;
+    width: auto;
     vertical-align: top;
-    margin-right: 17px;
-    width: 230px;
+    margin-right: 0;
+
+    &--border {
+      margin-right: 44px;
+    }
   }
 }
 
