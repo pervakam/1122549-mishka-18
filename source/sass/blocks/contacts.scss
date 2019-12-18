@@ -91,7 +91,7 @@
 @media (min-width: $desktop-width) {
 
   .contacts {
-    padding: 52px 10px 16px 170px;
+    padding: 52px 10px 16px 172px;
     font-size: 17px;
     line-height: 1.76;
     width: 310px;
@@ -111,18 +111,26 @@
       background: url("../img/contacts/icon-flag.svg") no-repeat;
       height: 81px;
       width: 47px;
-      margin-left: -100px;
-      margin-right: 50px;
+      margin-top: 10px;
+      margin-left: -109px;
+      margin-right: 59px;
     }
   }
 
+  .contacts__description {
+    margin-top: 31px;
+  }
+
   .contacts__contact-type {
-    margin-bottom: 35px;
-    margin-right: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: 18px;
   }
 
   .contacts__contact-adress {
+    line-height: 1.8;
+    margin-top: 0;
     margin-right: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }

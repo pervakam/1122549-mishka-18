@@ -1,7 +1,7 @@
 .catalog {
   padding: 0 30px;
   margin: 0 auto;
-  margin-top: 79px;
+  margin-top: 30px;
   box-sizing: border-box;
   width: 320px;
 }
@@ -13,26 +13,35 @@
 }
 
 .catalog__item {
-  border: 1px solid $gray;
   margin-top: 30px;
+}
+
+.catalog__item-about {
+  border-left: 1px solid $gray;
+  border-right: 1px solid $gray;
+  border-bottom: 1px solid $gray;
 }
 
 .catalog__item-description {
   text-align: left;
-  padding: 0 28px;
+  padding: 0 27px;
 }
 
 .catalog__item-price {
   display: flex;
   justify-content: space-between;
-  padding: 22px 28px 32px;
+  padding: 22px 27px 28px;
 }
 
 .catalog__item-title {
   font-size: 17px;
   font-weight: bold;
-  margin: 31px 0 17px;
+  margin: 23px 0 14px;
   line-height: 1.41;
+
+  &--toy-basket {
+    margin-bottom: 16px;
+  }
 }
 
 .catalog__item-parameter {

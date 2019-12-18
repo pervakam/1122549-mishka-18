@@ -189,7 +189,7 @@
     box-sizing: border-box;
     width: 1150px;
     font-size: 20px;
-    padding: 35px 225px 0;
+    padding: 61px 225px 0;
     margin: 0 auto;
   }
 
@@ -197,7 +197,38 @@
     font-size: 53px;
   }
 
+  .about-us__scroll {
+    margin-top: 48px;
+  }
+
   .about-us__list-left {
     margin-right: 50px;
+  }
+
+  .about-us__item {
+
+    &--price {
+      &::before {
+        margin-bottom: 26px;
+      }
+    }
+
+    &--like {
+      &::before {
+        margin-bottom: 21px;
+      }
+    }
+
+    &--handmade::before {
+      margin-bottom: 17px;
+      margin-left: 4px;
+    }
+
+    &--giftbox {
+      &::before {
+        margin-bottom: 19px;
+        margin-left: 4px;
+      }
+    }
   }
 }

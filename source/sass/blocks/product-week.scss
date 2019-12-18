@@ -158,15 +158,16 @@
     width: auto;
     margin: 0;
     padding: 0;
-    background-repeat: repeat-x;
-    background-size: auto 15px;
+    background-position-x: 9px;
+    background-size: 1050px auto;
+
   }
 
   .product-week__wrapper {
     box-sizing: border-box;
     width: 1150px;
     margin: 0 auto;
-    padding: 69px 48px 70px 97px;
+    padding: 69px 48px 94px 97px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
