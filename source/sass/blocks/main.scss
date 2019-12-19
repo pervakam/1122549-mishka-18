@@ -1,6 +1,7 @@
 .page-main {
   margin: 0 auto;
   width: auto;
+
 }
 
 .page-main__intro {
@@ -24,9 +25,9 @@
   font-weight: bold;
   background-color: $gray-light;
   margin: 0 auto;
-  padding: 70px 0 77px ;
-}
+  padding: 70px 0 77px;
 
+}
 
 
 @media (min-width: $tablet-width) {
@@ -49,17 +50,34 @@
   }
 
   .page-main__title {
+
     font-size: 43px;
-    margin-top: -87px;
+    margin-top: -88px;
     padding: 94px 42px 83px;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
+    border-top: 1px solid rgba(68, 68, 68, 0.1);
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/global/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 770px auto;
+      height: 24px;
+      width: auto;
+      left: -15px;
+      right: 0;
+      margin-top: 120px;
+    }
   }
+
 }
 
 
 @media (min-width: $desktop-width) {
 
   .page-main__intro {
+    height: 627px;
     box-sizing: border-box;
     border-top: 1px solid $gray;
     min-width: 1150px;
@@ -71,13 +89,22 @@
     font-size: 53px;
     line-height: 1.08;
     padding-top: 153px;
-    padding-bottom: 360px;
+    //padding-bottom: 360px;
   }
 
   .page-main__title {
     font-size: 53px;
     margin-top: -88px;
-    padding: 95px 42px 100px;
-    margin-bottom: 128px;
+    padding: 90px 42px 105px;
+    margin-bottom: 120px;
+
+    &::after {
+      background-size: 1150px auto;
+      height: 34px;
+      width: auto;
+      left: -20px;
+      right: 0;
+      margin-top: 145px;
+    }
   }
 }

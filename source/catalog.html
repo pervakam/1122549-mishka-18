@@ -13,30 +13,30 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--logo">
-          <a class="main-nav__image"><span class="visually-hidden">Магазин Мишка</span></a>
+          <a class="main-nav__image" href="index.html"><span class="visually-hidden">Магазин Мишка</span></a>
           <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--opened" type="button"
                   value="Открыть меню"></button>
         </li>
-<!--        <li class="main-nav__item main-nav__item&#45;&#45;catalog">-->
-<!--          <a href="catalog.html">Каталог товаров</a>-->
-<!--        </li>-->
-<!--        <li class="main-nav__item main-nav__item&#45;&#45;order">-->
-<!--          <a href="form.html">Вязание на заказ</a>-->
-<!--        </li>-->
-<!--        <li class="main-nav__item main-nav__item&#45;&#45;search">-->
-<!--          <a href="#"><span class="main-nav__item-search">Поиск по сайту</span></a>-->
-<!--        </li>-->
-<!--        <li class="main-nav__item main-nav__item&#45;&#45;cart">-->
-<!--          <a href="#">Корзина: пока пуста</a>-->
-<!--        </li>-->
-<!--        <li class="main-nav__item main-nav__item&#45;&#45;delivery">-->
-<!--          <span class="main-nav__item-delivery">Бесплатная доставка по России</span>-->
-<!--        </li>-->
-<!--        <li class="main-nav__item main-nav__item&#45;&#45;new">-->
-<!--          <a href="#">Новые поступления</a>-->
-<!--        </li>-->
-<!--        <li class="main-nav__item main-nav__item&#45;&#45;sale">-->
-<!--          <a href="#">Распродажа</a>-->
+        <li class="main-nav__item main-nav__item--catalog">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item main-nav__item--order">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item main-nav__item--search">
+          <a href="#"><span class="main-nav__item-search">Поиск по сайту</span></a>
+        </li>
+        <li class="main-nav__item main-nav__item--cart">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+        <li class="main-nav__item main-nav__item--delivery">
+          <span class="main-nav__item-delivery">Бесплатная доставка по России</span>
+        </li>
+        <li class="main-nav__item main-nav__item--new">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item main-nav__item--sale">
+          <a href="#">Распродажа</a>
         </li>
       </ul>
     </div>
@@ -86,14 +86,14 @@
             <img class="catalog__item-image" src="img/catalog/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
           </picture>
         </a>
-        <div class="catalog__item-about">
+        <div class="catalog__item-about catalog__item-about--basket">
           <div class="catalog__item-description">
-            <h2 class="catalog__item-title">
+            <h2 class="catalog__item-title catalog__item-title--basket">
               <a href="laundry-basket.html">Корзинка для белья</a>
             </h2>
             <p class="catalog__item-parameter">Диаметр 15 см, высота 10 см</p>
           </div>
-          <div class="catalog__item-price">
+          <div class="catalog__item-price catalog__item-price--basket">
             <span class="catalog__item-cost">690 руб.</span>
             <a class="catalog__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
@@ -118,14 +118,14 @@
                  alt="Большая корзинка для игрушек">
           </picture>
         </a>
-        <div class="catalog__item-about">
+        <div class="catalog__item-about catalog__item-about--toy-basket">
           <div class="catalog__item-description">
             <h2 class="catalog__item-title catalog__item-title--toy-basket">
               <a href="toy-basket.html">Большая корзинка для игрушек</a>
             </h2>
-            <p class="catalog__item-parameter">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog__item-parameter catalog__item-parameter--toy-basket">Диаметр 30 см, высота 30 см</p>
           </div>
-          <div class="catalog__item-price">
+          <div class="catalog__item-price catalog__item-price--toy-basket">
             <span class="catalog__item-cost">1 500 руб.</span>
             <a class="catalog__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
@@ -141,6 +141,16 @@
         </div>
       </li>
     </ul>
+<!--    <section class="catalog-popup">-->
+<!--      <h2 class="catalog-popup__title">Добавить в корзину</h2>-->
+<!--      <p class="catalog-popup__size">Выберите размер:</p>-->
+<!--      <ul class="catalog-popup__size-list">-->
+<!--        <li class="catalog-popup__size-item">S</li>-->
+<!--        <li class="catalog-popup__size-item">M</li>-->
+<!--        <li class="catalog-popup__size-item">L</li>-->
+<!--      </ul>-->
+<!--      <button class="catalog-popup__order button">Добавить</button>-->
+<!--       </section>-->
   </section>
   <section class="production">
     <h2 class="production__title production__title--picture">Процесс производства</h2>

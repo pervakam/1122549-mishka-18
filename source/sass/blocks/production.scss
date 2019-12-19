@@ -62,7 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    padding: 53px 50px 105px;
+    padding: 53px 51px 62px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -71,15 +71,17 @@
   }
 
   .production__title {
+    box-sizing: border-box;
+    width: 668px;
     order: 2;
     font-size: 20px;
-    padding: 34px 40px;
+    padding: 35px 40px 30px;
 
     &--picture::before {
-      padding-right: 32px;
+      margin-top: -2px;
+      margin-right: 32px;
     }
   }
-
   .production__video {
     height: 455px;
     background: url("../img/production/video-tablet@1x.jpg") no-repeat left;
@@ -92,14 +94,19 @@
   }
 
   .production__description {
+    box-sizing: border-box;
     order: 3;
-    padding: 0 38px 40px;
+    width: 668px;
+    padding: 0 38px 44px;
   }
 
   .production__description-text {
     font-size: 15px;
-    padding: 0 0 36px;
-      }
+    padding: 0 0 35px;
+    line-height: 2;
+  }
+
+
 }
 
 @media (min-width: $desktop-width) {
@@ -110,37 +117,46 @@
     margin: 0 auto;
     box-sizing: border-box;
     width: 1150px;
+    padding-top: 57px;
     padding-bottom: 105px;
   }
 
   .production__video {
     height: 455px;
     background: url("../img/production/video-desktop@1x.jpg") no-repeat left;
-    width: 682px;
+    width: 681px;
   }
 
   .production__title {
+    width: 368px;
     display: flex;
     flex-direction: column;
-    width: 230px;
     margin: 0;
-    padding: 47px 57px 0 79px;
+    padding: 47px 56px 0 76px;
+    line-height: 1.2;
 
     &--picture::before {
-      margin-bottom: 20px;
+      margin-top: -5px;
+      margin-left: 1px;
+      margin-bottom: 25px;
     }
   }
 
   .production__description {
-    width: 230px;
+    width: 368px;
     margin: 0;
-    padding: 30px 57px 52px 79px;
+    margin-top: 142px;
+    margin-left: -368px;
+    padding: 34px 57px 58px 76px;
   }
 
   .production__description-text {
-    width: 230px;
     margin: 0;
-    padding-bottom: 43px;
+    padding-bottom: 47px;
     line-height: 2;
+  }
+
+  .production__order {
+    margin: 0 -1px 0 0;
   }
 }

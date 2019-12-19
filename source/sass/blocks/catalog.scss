@@ -4,6 +4,7 @@
   margin-top: 30px;
   box-sizing: border-box;
   width: 320px;
+  position: relative;
 }
 
 .catalog__list {
@@ -76,6 +77,7 @@
     justify-content: left;
     margin-top: 54px;
     border: none;
+    outline: 1px solid $gray;
   }
 
   .catalog__item-picture {
@@ -85,7 +87,12 @@
   .catalog__item-title {
     font-size: 20px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+    line-height: 1.2;
+
+    &--basket {
+      margin-bottom: 16px;
+    }
   }
 
   .catalog__item-parameter {
@@ -99,7 +106,7 @@
   }
 
   .catalog__item-description {
-    padding: 26px 0 0 26px;
+    padding: 25px 0 0 27px;
   }
 
   .catalog__item-about {
@@ -107,13 +114,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 1px solid $gray;
+    border: none;
+
   }
 
   .catalog__item-price {
     padding: 0;
-    padding-top: 20px;
-    margin: 0 30px 32px 32px;
+    padding-top: 25px;
+    margin: 0 32px 27px 32px;
     border-top: 1px solid $gray;
     vertical-align: bottom;
   }
@@ -135,8 +143,10 @@
   }
 
   .catalog__item {
-    border: 1px solid $gray;
-    margin-top: 0;
+    min-height: 659px;
+    box-sizing: border-box;
+    outline: 1px solid $gray;
+    margin: 0;
     flex-direction: column;
     width: 316px;
   }
@@ -146,38 +156,63 @@
   }
 
   .catalog__item-about {
+    box-sizing: border-box;
+    width: 316px;
     outline: none;
     margin: 0;
-    padding: 0;
+    padding: 25px 28px 0;
+
+    &--basket {
+      padding: 25px 26px 0;
+    }
+
+    &--toy-basket {
+      padding: 25px 26px 0;
+    }
   }
 
   .catalog__item-description {
+    box-sizing: inherit;
     text-align: left;
     margin: 0;
     padding: 0;
   }
 
   .catalog__item-price {
+    box-sizing: inherit;
     display: flex;
     justify-content: space-between;
-    margin: 22px 28px 5px;
-    padding: 0;
+    padding: 23px 4px 0 0;
+    margin: 0;
     border: none;
+
+    &--basket {
+      padding: 23px 7px 0 0;
+    }
+
+    &--toy-basket {
+      padding: 23px 7px 0 0;
+    }
   }
 
   .catalog__item-title {
     font-size: 20px;
     font-weight: bold;
-    margin: 23px 28px 13px;
+    padding: 0 0 13px;
+    margin: 0;
     line-height: 1.2;
   }
 
   .catalog__item-parameter {
     font-size: 15px;
     color: $grayish-brown;
-    margin: 0 28px;
-    padding-bottom: 45px;
+    margin: 0;
+    padding: 0 0 45px;
     border-bottom: 1px solid $gray;
+
+    &--toy-basket {
+      padding: 0 0 21px;
+    }
   }
 
   .catalog__item-cost {

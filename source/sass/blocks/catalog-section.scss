@@ -149,6 +149,10 @@
   .catalog-section__item-interior,
   .catalog-section__item-toy {
     min-width: 525px;
+    &:hover {
+      transform: translateY(-5px);
+    }
+
   }
 
   .catalog-section__title {
@@ -161,9 +165,14 @@
     font-weight: bold;
     text-align: left;
 
+    &:active {
+      opacity: 0.3;
+    }
+
 
     &--interior {
       padding: 30px 36px 29px 35px;
+
     }
 
     &--toy {

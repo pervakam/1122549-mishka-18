@@ -9,33 +9,34 @@
 </head>
 <body>
 <header class="page-header">
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--opened">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--logo">
           <a class="main-nav__image" href="index.html"><span class="visually-hidden">Магазин Мишка</span></a>
-          <button class="main-nav__toggle" type="button" value="Открыть меню"></button>
+          <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--opened" type="button"
+                  value="Открыть меню"></button>
         </li>
-        <li class="main-nav__item main-nav__item--catalog">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-nav__item main-nav__item--order">
-          <a href="#">Вязание на заказ</a>
-        </li>
-        <li class="main-nav__item main-nav__item--search">
-          <a href="#"><span class="main-nav__item-search">Поиск по сайту</span></a>
-        </li>
-        <li class="main-nav__item main-nav__item--cart">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-        <li class="main-nav__item main-nav__item--delivery">
-          <span class="main-nav__item-delivery">Бесплатная доставка по России</span>
-        </li>
-        <li class="main-nav__item main-nav__item--new">
-          <a href="#">Новые поступления</a>
-        </li>
-        <li class="main-nav__item main-nav__item--sale">
-          <a href="#">Распродажа</a>
+                <li class="main-nav__item main-nav__item--catalog">
+                  <a href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="main-nav__item main-nav__item--order">
+                  <a href="">Вязание на заказ</a>
+                </li>
+                <li class="main-nav__item main-nav__item--search">
+                  <a href="#"><span class="main-nav__item-search">Поиск по сайту</span></a>
+                </li>
+                <li class="main-nav__item main-nav__item--cart">
+                  <a href="#">Корзина: пока пуста</a>
+                </li>
+                <li class="main-nav__item main-nav__item--delivery">
+                  <span class="main-nav__item-delivery">Бесплатная доставка по России</span>
+                </li>
+                <li class="main-nav__item main-nav__item--new">
+                  <a href="#">Новые поступления</a>
+                </li>
+                <li class="main-nav__item main-nav__item--sale">
+                  <a href="#">Распродажа</a>
         </li>
       </ul>
     </div>
@@ -51,12 +52,13 @@
         <h2 class="filter__part-title filter__part-title--type">Тип</h2>
         <ul class="filter__list-type">
           <li class="filter__option-type">
-            <label class="filter__option-radio"><input type="radio" name="filter-type" value="accessory" checked>Аксессуар
-              для интерьера</label>
+            <input class="filter__input-radio" type="radio" name="filter-type" id="accessory-item" value="accessory"
+                   checked>
+            <label class="filter__option-radio" for="accessory-item">Аксессуар для интерьера</label>
           </li>
           <li class="filter__option-type">
-            <label class="filter__option-radio"><input type="radio" name="filter-type" value="toy">Детская
-              игрушка</label>
+            <input class="filter__input-radio" type="radio" name="filter-type" id="toy-item" value="toy">
+            <label class="filter__option-radio" for="toy-item">Детская игрушка</label>
           </li>
         </ul>
       </div>
@@ -65,22 +67,28 @@
           <h2 class="filter__part-title filter__part-title--color">Цвет</h2>
           <ul class="filter__list-color">
             <li class="filter__option-color">
-              <label class="filter__option-checkbox"><input type="checkbox" name="white" checked>Белый</label>
+              <input class="filter__input-checkbox" type="checkbox" name="white" id="item-white" checked>
+              <label class="filter__option-checkbox" for="item-white">Белый</label>
             </li>
             <li class="filter__option-color">
-              <label class="filter__option-checkbox"><input type="checkbox" name="gray" checked>Серый</label>
+              <input class="filter__input-checkbox" type="checkbox" name="gray" id="item-grey" checked>
+              <label class="filter__option-checkbox" for="item-grey">Серый</label>
             </li>
             <li class="filter__option-color">
-              <label class="filter__option-checkbox"><input type="checkbox" name="tiffany">«Тиффани»</label>
+              <input class="filter__input-checkbox" type="checkbox" name="tiffany" id="item-tiffany">
+              <label class="filter__option-checkbox" for="item-tiffany">«Тиффани»</label>
             </li>
             <li class="filter__option-color">
-              <label class="filter__option-checkbox"><input type="checkbox" name="black">Чёрный</label>
+              <input class="filter__input-checkbox" type="checkbox" name="black" id="item-black">
+              <label class="filter__option-checkbox" for="item-black">Чёрный</label>
             </li>
             <li class="filter__option-color">
-              <label class="filter__option-checkbox"><input type="checkbox" name="pink">Розовый</label>
+              <input class="filter__input-checkbox" type="checkbox" name="pink" id="item-pink">
+              <label class="filter__option-checkbox" for="item-pink">Розовый</label>
             </li>
             <li class="filter__option-color">
-              <label class="filter__option-checkbox"><input type="checkbox" name="orange">Оранжевый</label>
+              <input class="filter__input-checkbox" type="checkbox" name="orange" id="item-orange">
+              <label class="filter__option-checkbox" for="item-orange">Оранжевый</label>
             </li>
           </ul>
         </div>
@@ -123,7 +131,7 @@
                   rows="6">Опишите все ваши пожелания к заказу</textarea>
       </div>
       <div class="filter__end">
-        <small class="filter__legend"><sup>*</sup>Поля обязательны для заполнения</small>
+        <small class="filter__legend">*Поля обязательны для заполнения</small>
         <input class="filter__button" value="Отправить заказ" type="submit">
       </div>
     </form>
