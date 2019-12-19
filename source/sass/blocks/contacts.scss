@@ -26,12 +26,25 @@
   vertical-align: top;
 }
 
-.contacts__contact-adress {
+.contacts__contact-adress{
   display: inline-block;
+  vertical-align: middle;
   width: 180px;
   margin: 0;
   margin-top: 23px;
   margin-bottom: 7px;
+
+  &:hover{
+  color: #46c1ae;
+}
+
+  a:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--border {
     border-bottom: 1px solid $seafoam-blue;

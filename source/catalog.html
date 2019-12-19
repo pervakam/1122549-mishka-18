@@ -141,16 +141,26 @@
         </div>
       </li>
     </ul>
-<!--    <section class="catalog-popup">-->
-<!--      <h2 class="catalog-popup__title">Добавить в корзину</h2>-->
-<!--      <p class="catalog-popup__size">Выберите размер:</p>-->
-<!--      <ul class="catalog-popup__size-list">-->
-<!--        <li class="catalog-popup__size-item">S</li>-->
-<!--        <li class="catalog-popup__size-item">M</li>-->
-<!--        <li class="catalog-popup__size-item">L</li>-->
-<!--      </ul>-->
-<!--      <button class="catalog-popup__order button">Добавить</button>-->
-<!--       </section>-->
+    <section class="catalog-popup">
+      <h2 class="catalog-popup__title">Добавить в корзину</h2>
+      <p class="catalog-popup__size">Выберите размер:</p>
+      <ul class="catalog-popup__size-list">
+        <li class="catalog-popup__size-item">
+          <input class="catalog-popup__input-radio" type="radio" name="filter-size" id="s-item" value="size-s"
+                 checked>
+          <label class="catalog-popup__option-radio" for="s-item">S</label>
+        </li>
+        <li class="catalog-popup__size-item">
+          <input class="catalog-popup__input-radio" type="radio" name="filter-size" id="m-item" value="size-m">
+          <label class="catalog-popup__option-radio" for="m-item">M</label>
+        </li>
+        <li class="catalog-popup__size-item">
+          <input class="catalog-popup__input-radio" type="radio" name="filter-size" id="l-item" value="size-l">
+          <label class="catalog-popup__option-radio" for="l-item">L</label>
+        </li>
+      </ul>
+      <button class="catalog-popup__order button">Добавить</button>
+       </section>
   </section>
   <section class="production">
     <h2 class="production__title production__title--picture">Процесс производства</h2>

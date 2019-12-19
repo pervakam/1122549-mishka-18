@@ -58,6 +58,13 @@
     height: 34px;
     margin-right: 120px;
 
+    &:hover {
+      background: url("../img/footer/logo-footer-hover.svg") no-repeat;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__list {
@@ -69,6 +76,21 @@
     margin: auto 20px;
   }
 
+  .page-footer__link {
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__link path {
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .page-footer__copyright {
     border: none;
     padding: 0;
@@ -77,7 +99,12 @@
   }
 
   .page-footer__developed {
+    cursor: pointer;
     margin-right: 30px;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

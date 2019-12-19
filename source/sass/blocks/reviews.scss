@@ -72,6 +72,14 @@
   color: $black;
   border: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 
   &--prev {
     background: url("../img/reviews/icon-left-arrow.svg") no-repeat 48% 48%;
