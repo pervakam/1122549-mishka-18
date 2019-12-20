@@ -3,19 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка Каталог</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--opened">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--logo">
           <a class="main-nav__image" href="index.html"><span class="visually-hidden">Магазин Мишка</span></a>
-          <button class="main-nav__toggle" type="button" value="Открыть меню"></button>
+          <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--opened" type="button"
+                  value="Открыть меню"></button>
         </li>
         <li class="main-nav__item main-nav__item--catalog">
-          <a href="">Каталог товаров</a>
+          <a href="#">Каталог товаров</a>
         </li>
         <li class="main-nav__item main-nav__item--order">
           <a href="form.html">Вязание на заказ</a>
@@ -83,14 +86,14 @@
             <img class="catalog__item-image" src="img/catalog/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
           </picture>
         </a>
-        <div class="catalog__item-about">
+        <div class="catalog__item-about catalog__item-about--basket">
           <div class="catalog__item-description">
-            <h2 class="catalog__item-title">
+            <h2 class="catalog__item-title catalog__item-title--basket">
               <a href="laundry-basket.html">Корзинка для белья</a>
             </h2>
             <p class="catalog__item-parameter">Диаметр 15 см, высота 10 см</p>
           </div>
-          <div class="catalog__item-price">
+          <div class="catalog__item-price catalog__item-price--basket">
             <span class="catalog__item-cost">690 руб.</span>
             <a class="catalog__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
@@ -115,14 +118,14 @@
                  alt="Большая корзинка для игрушек">
           </picture>
         </a>
-        <div class="catalog__item-about">
+        <div class="catalog__item-about catalog__item-about--toy-basket">
           <div class="catalog__item-description">
-            <h2 class="catalog__item-title">
+            <h2 class="catalog__item-title catalog__item-title--toy-basket">
               <a href="toy-basket.html">Большая корзинка для игрушек</a>
             </h2>
-            <p class="catalog__item-parameter">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog__item-parameter catalog__item-parameter--toy-basket">Диаметр 30 см, высота 30 см</p>
           </div>
-          <div class="catalog__item-price">
+          <div class="catalog__item-price catalog__item-price--toy-basket">
             <span class="catalog__item-cost">1 500 руб.</span>
             <a class="catalog__item-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
@@ -138,6 +141,26 @@
         </div>
       </li>
     </ul>
+    <section class="catalog-popup">
+      <h2 class="catalog-popup__title">Добавить в корзину</h2>
+      <p class="catalog-popup__size">Выберите размер:</p>
+      <ul class="catalog-popup__size-list">
+        <li class="catalog-popup__size-item">
+          <input class="catalog-popup__input-radio" type="radio" name="filter-size" id="s-item" value="size-s"
+                 checked>
+          <label class="catalog-popup__option-radio" for="s-item">S</label>
+        </li>
+        <li class="catalog-popup__size-item">
+          <input class="catalog-popup__input-radio" type="radio" name="filter-size" id="m-item" value="size-m">
+          <label class="catalog-popup__option-radio" for="m-item">M</label>
+        </li>
+        <li class="catalog-popup__size-item">
+          <input class="catalog-popup__input-radio" type="radio" name="filter-size" id="l-item" value="size-l">
+          <label class="catalog-popup__option-radio" for="l-item">L</label>
+        </li>
+      </ul>
+      <button class="catalog-popup__order button">Добавить</button>
+       </section>
   </section>
   <section class="production">
     <h2 class="production__title production__title--picture">Процесс производства</h2>

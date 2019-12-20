@@ -4,15 +4,24 @@
   font-weight: bold;
   color: $grayish-brown;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 15px 0;
   border: 2px solid $grayish-brown;
   margin: 0 auto;
   background-color: $main-color;
+
+  &:hover {
+    background-color: $grayish-brown;
+    color: #ffffff;
+  }
+
+  &:active {
+  color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 
 @media (min-width: $tablet-width) {
   .button {
-    padding: 17px 0;
+    padding: 15px 0;
   }
 }
