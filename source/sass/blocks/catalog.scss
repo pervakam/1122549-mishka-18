@@ -17,8 +17,32 @@
   margin-top: 30px;
 }
 
-.catalog__item-picture {
+.catalog__item-image {
+  display: block;
+  background-color: $gray;
+  width: 260px;
   height: 195px;
+
+  &--bunny {
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/catalog/photo-hare-mobile@2x.jpg") no-repeat;
+      background-size: 260px 195px;
+    }
+  }
+
+  &--bowl {
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/catalog/photo-bowl-mobile@2x.jpg") no-repeat;
+      background-size: 260px 195px;
+    }
+  }
+
+  &--toys {
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/catalog/photo-toys-mobile@2x.jpg") no-repeat;
+      background-size: 260px 195px;
+    }
+  }
 }
 
 .catalog__item-about {
@@ -111,8 +135,32 @@
     outline: 1px solid $gray;
   }
 
-  .catalog__item-picture {
+  .catalog__item-image {
+    display: block;
+    background-color: $gray;
+    width: 334px;
     height: 334px;
+
+    &--bunny {
+      @media (min-resolution: $retina-dppx) {
+        background: url("../img/catalog/photo-hare-tablet@2x.jpg") no-repeat;
+        background-size: 334px 334px;
+      }
+    }
+
+    &--bowl {
+      @media (min-resolution: $retina-dppx) {
+        background: url("../img/catalog/photo-bowl-tablet@2x.jpg") no-repeat;
+        background-size: 334px 334px;
+      }
+    }
+
+    &--toys {
+      @media (min-resolution: $retina-dppx) {
+        background: url("../img/catalog/photo-toys-tablet@2x.jpg") no-repeat;
+        background-size: 334px 334px;
+      }
+    }
   }
 
   .catalog__item-title {
@@ -183,8 +231,32 @@
     width: 316px;
   }
 
-  .catalog__item-picture {
+  .catalog__item-image {
+    display: block;
+    background-color: $gray;
+    width: 316px;
     height: 462px;
+
+    &--bunny {
+      @media (min-resolution: $retina-dppx) {
+        background: url("../img/catalog/photo-hare-desktop@2x.jpg") no-repeat;
+        background-size: 316px 462px;
+      }
+    }
+
+    &--bowl {
+      @media (min-resolution: $retina-dppx) {
+        background: url("../img/catalog/photo-bowl-desktop@2x.jpg") no-repeat;
+        background-size: 316px 462px;
+      }
+    }
+
+    &--toys {
+      @media (min-resolution: $retina-dppx) {
+        background: url("../img/catalog/photo-toys-desktop@2x.jpg") no-repeat;
+        background-size: 316px 462px;
+      }
+    }
   }
 
   .catalog__item-about {

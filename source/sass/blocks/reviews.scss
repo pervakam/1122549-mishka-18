@@ -120,6 +120,11 @@
   .reviews__pic {
     display: block;
     margin-left: -50px;
+    background-color: $gray;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $gray url("../img/reviews/review@2x.jpg") no-repeat;
+    }
   }
 
   .reviews__list {

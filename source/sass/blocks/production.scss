@@ -34,9 +34,12 @@
 
 .production__video {
   height: 150px;
-  background: url("../img/production/video-mobile@1x.jpg") no-repeat left;
   width: 260px;
-  margin: 0;
+  background: $gray url("../img/production/video-mobile@1x.jpg") no-repeat left;
+
+  @media (min-resolution: $retina-dppx) {
+    background: $gray url("../img/production/video-mobile@2x.jpg") no-repeat;
+  }
 }
 
 .production__play {
@@ -85,9 +88,14 @@
   }
   .production__video {
     height: 455px;
-    background: url("../img/production/video-tablet@1x.jpg") no-repeat left;
     width: 668px;
+    background: $gray url("../img/production/video-tablet@1x.jpg") no-repeat left;
     order: 1;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $gray url("../img/production/video-tablet@2x.jpg") no-repeat;
+      background-size: 668px 455px;
+    }
   }
 
   .production__play {
@@ -123,9 +131,15 @@
   }
 
   .production__video {
-    height: 455px;
-    background: url("../img/production/video-desktop@1x.jpg") no-repeat left;
     width: 681px;
+    height: 455px;
+    background: $gray url("../img/production/video-desktop@1x.jpg") no-repeat left;
+
+
+    @media (min-resolution: $retina-dppx) {
+      background: $gray url("../img/production/video-desktop@2x.jpg") no-repeat;
+      background-size: 681px 455px;
+    }
   }
 
   .production__play {
