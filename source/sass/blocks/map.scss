@@ -7,6 +7,10 @@
   display: block;
   margin: -457px auto 0;
   z-index: -1;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/map/map-mobile@2x.jpg") no-repeat;
+  }
 }
 
 
@@ -15,10 +19,22 @@
     display: block;
     margin: -459px auto 0;
     z-index: -1;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/map/map-tablet@2x.jpg") no-repeat;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+
+  .map__image {
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/map/map-desktop@2x.jpg") no-repeat;
+    }
+  }
+
   .map {
     width: 525px;
   }

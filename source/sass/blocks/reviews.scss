@@ -101,25 +101,25 @@
 @media (min-width: $tablet-width) {
 
   .reviews {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    background-repeat: repeat-x;
-    background-size: auto 15px;
-  }
-
-  .reviews__wrapper {
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     width: 768px;
     margin: 0 auto;
     padding: 85px 50px 80px;
-    display: flex;
-    justify-content: left;
+    background-repeat: repeat-x;
+    background-size: 780px auto;
   }
 
   .reviews__pic {
     display: block;
     margin-left: -50px;
+    background-color: $gray;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $gray url("../img/reviews/review@2x.jpg") no-repeat;
+    }
   }
 
   .reviews__list {
@@ -196,21 +196,17 @@
 @media (min-width: $desktop-width) {
 
   .reviews {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    background-position-x: 9px;
-    background-size: 1050px auto;
-
-  }
-
-  .reviews__wrapper {
     box-sizing: border-box;
-    width: 1150px;
-    padding: 87px 50px 90px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: 1050px;
     margin: 0 auto;
+    padding: 90px 0 92px;
+    background-repeat: repeat-x;
+    background-position-x: 25px;
+    background-size: 1050px 23px;
+
   }
 
   .reviews__title {
@@ -238,7 +234,7 @@
   }
 
   .reviews__comment {
-    margin-top: 48px;
+    margin-top: 46px;
     margin-bottom: 0;
   }
 
