@@ -14,8 +14,29 @@
   margin: 0;
 }
 
-.main-nav__image {
-  background: url("../img/header/logo-mobile.svg") no-repeat;
+//.main-nav__image {
+//  background: url("../img/header/logo-mobile.svg") no-repeat;
+//  width: 86px;
+//  height: 35px;
+//}
+//
+//.logo-mobile {
+//  display: block;
+//  width: 86px;
+//  height: 35px;
+//}
+//
+//.logo-tablet {
+//  display: none;
+//}
+//
+//.logo-desktop {
+//  display: none;
+//}
+
+.main-nav__logo {
+  background: url("../img/header/logo-sprite.svg#logo-mobile") no-repeat;
+  display: block;
   width: 86px;
   height: 35px;
 }
