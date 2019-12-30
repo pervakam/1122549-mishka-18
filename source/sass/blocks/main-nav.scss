@@ -14,29 +14,8 @@
   margin: 0;
 }
 
-//.main-nav__image {
-//  background: url("../img/header/logo-mobile.svg") no-repeat;
-//  width: 86px;
-//  height: 35px;
-//}
-//
-//.logo-mobile {
-//  display: block;
-//  width: 86px;
-//  height: 35px;
-//}
-//
-//.logo-tablet {
-//  display: none;
-//}
-//
-//.logo-desktop {
-//  display: none;
-//}
-
-.main-nav__logo {
-  background: url("../img/header/logo-sprite.svg#logo-mobile") no-repeat;
-  display: block;
+.main-nav__image {
+  background: url("../img/header/logo-mobile.svg") no-repeat;
   width: 86px;
   height: 35px;
 }
@@ -101,11 +80,11 @@
   padding: 29px 0 31px 75px;
   margin: auto 0;
 
-  &:hover {
+  & a:hover {
     opacity: 0.6;
   }
 
-  &:active {
+  & a:active {
     opacity: 0.3;
   }
 
@@ -125,53 +104,36 @@
 
   &--search {
     padding: 29px 0 29px 32px;
-
-    &::before {
-      display: block;
-      content: "";
-      background: url("../img/header/icon-search.svg") no-repeat;
-      width: 18px;
-      height: 18px;
-      margin-top: 3px;
-      margin-right: 26px;
-      opacity: 0.2;
-      cursor: pointer;
-    }
-
-    &:hover {
-      &::before {
-        background: url("../img/header/icon-search-hover.svg") no-repeat;
-        opacity: 1;
-      }
-    }
   }
 
   &--cart {
     padding: 29px 0 30px 31px;
-
-    &::before {
-      display: block;
-      content: "";
-      background: url("../img/header/icon-cart.svg") no-repeat;
-      width: 21px;
-      height: 18px;
-      margin-top: 2px;
-      margin-right: 24px;
-      opacity: 0.2;
-    }
-
-    &:hover {
-      &::before {
-        background: url("../img/header/icon-cart-hover.svg") no-repeat;
-        opacity: 1;
-      }
-    }
   }
 
   &--delivery,
   &--new,
   &--sale {
     display: none;
+  }
+
+  .main-nav__icon-search,
+  .main-nav__icon-cart {
+    padding: 0;
+    margin-top: 2px;
+    margin-right: 25px;
+    opacity: 0.2;
+    cursor: pointer;
+  }
+
+  .main-nav__icon-search:hover,
+  .main-nav__icon-cart:hover  {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  .main-nav__icon-search:active,
+  .main-nav__icon-cart:active  {
+    opacity: 0.3;
   }
 }
 
