@@ -48,8 +48,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
-
   .page-footer__wrapper {
     box-sizing: border-box;
     width: 768px;
@@ -86,6 +84,7 @@
     &:hover {
       fill: #46c1ae;
     }
+
     &:active {
       opacity: 0.3;
     }
@@ -108,10 +107,10 @@
   }
 
   .page-footer__logo-academy {
-
     &:hover {
       fill: #46c1ae;
     }
+
     &:active {
       opacity: 0.3;
     }
@@ -119,7 +118,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;

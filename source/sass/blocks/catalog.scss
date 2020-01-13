@@ -22,7 +22,6 @@
   background-color: $gray;
   width: 260px;
   height: 195px;
-
 }
 
 .catalog__item-about {
@@ -31,11 +30,11 @@
   border-bottom: 1px solid $gray;
 
   &:hover {
-    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -99,7 +98,6 @@
 
 
 @media (min-width: $tablet-width) {
-
   .catalog {
     margin-top: 78px;
     padding: 0 50px;
@@ -120,8 +118,7 @@
     background-color: $gray;
     width: 334px;
     height: 334px;
-    }
-
+  }
 
   .catalog__item-title {
     font-size: 20px;
@@ -155,7 +152,6 @@
     flex-direction: column;
     justify-content: space-between;
     border: none;
-
   }
 
   .catalog__item-price {
@@ -169,7 +165,6 @@
 
 
 @media (min-width: $desktop-width) {
-
   .catalog {
     margin-top: 128px;
     width: 1150px;
@@ -266,4 +261,3 @@
     padding: 0;
   }
 }
-

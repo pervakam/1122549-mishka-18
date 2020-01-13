@@ -34,7 +34,6 @@
 
 
 @media (min-width: $tablet-width) {
-
   .page-main__intro {
     box-sizing: border-box;
     border-top: 1px solid $gray;
@@ -79,12 +78,9 @@
       margin-top: 120px;
     }
   }
-
 }
 
-
 @media (min-width: $desktop-width) {
-
   .page-main__intro {
     box-sizing: border-box;
     border-top: 1px solid $gray;
