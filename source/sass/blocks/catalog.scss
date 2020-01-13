@@ -23,26 +23,6 @@
   width: 260px;
   height: 195px;
 
-  &--bunny {
-    @media (min-resolution: $retina-dppx) {
-      background: url("../img/catalog/photo-hare-mobile@2x.jpg") no-repeat;
-      background-size: 260px 195px;
-    }
-  }
-
-  &--bowl {
-    @media (min-resolution: $retina-dppx) {
-      background: url("../img/catalog/photo-bowl-mobile@2x.jpg") no-repeat;
-      background-size: 260px 195px;
-    }
-  }
-
-  &--toys {
-    @media (min-resolution: $retina-dppx) {
-      background: url("../img/catalog/photo-toys-mobile@2x.jpg") no-repeat;
-      background-size: 260px 195px;
-    }
-  }
 }
 
 .catalog__item-about {
@@ -73,9 +53,8 @@
 .catalog__item-title {
   font-size: 17px;
   font-weight: bold;
-  margin: 0;
-  margin-top: -3px;
   padding: 26px 0 14px;
+  margin: 0;
   line-height: 1.41;
 
   &:hover {
@@ -87,7 +66,7 @@
   }
 
   &--toy-basket {
-    margin-bottom: 16px;
+    margin: 0 0 16px;
   }
 }
 
@@ -105,7 +84,7 @@
   margin: auto 0;
 }
 
-.catalog__item-cart path {
+.catalog__icon-cart {
   opacity: 0.2;
 
   &:hover {
@@ -122,6 +101,7 @@
 @media (min-width: $tablet-width) {
 
   .catalog {
+    margin-top: 78px;
     padding: 0 50px;
     box-sizing: border-box;
     width: 768px;
@@ -140,38 +120,18 @@
     background-color: $gray;
     width: 334px;
     height: 334px;
-
-    &--bunny {
-      @media (min-resolution: $retina-dppx) {
-        background: url("../img/catalog/photo-hare-tablet@2x.jpg") no-repeat;
-        background-size: 334px 334px;
-      }
     }
 
-    &--bowl {
-      @media (min-resolution: $retina-dppx) {
-        background: url("../img/catalog/photo-bowl-tablet@2x.jpg") no-repeat;
-        background-size: 334px 334px;
-      }
-    }
-
-    &--toys {
-      @media (min-resolution: $retina-dppx) {
-        background: url("../img/catalog/photo-toys-tablet@2x.jpg") no-repeat;
-        background-size: 334px 334px;
-      }
-    }
-  }
 
   .catalog__item-title {
     font-size: 20px;
     margin: 0;
-    //margin-bottom: 1px;
+    margin-bottom: 12px;
     line-height: 1.2;
     padding-top: 0;
 
     &--basket {
-      //margin-bottom: 16px;
+      margin-bottom: 16px;
     }
   }
 
@@ -211,6 +171,7 @@
 @media (min-width: $desktop-width) {
 
   .catalog {
+    margin-top: 128px;
     width: 1150px;
   }
 
@@ -236,27 +197,6 @@
     background-color: $gray;
     width: 316px;
     height: 462px;
-
-    &--bunny {
-      @media (min-resolution: $retina-dppx) {
-        background: url("../img/catalog/photo-hare-desktop@2x.jpg") no-repeat;
-        background-size: 316px 462px;
-      }
-    }
-
-    &--bowl {
-      @media (min-resolution: $retina-dppx) {
-        background: url("../img/catalog/photo-bowl-desktop@2x.jpg") no-repeat;
-        background-size: 316px 462px;
-      }
-    }
-
-    &--toys {
-      @media (min-resolution: $retina-dppx) {
-        background: url("../img/catalog/photo-toys-desktop@2x.jpg") no-repeat;
-        background-size: 316px 462px;
-      }
-    }
   }
 
   .catalog__item-about {
@@ -311,11 +251,11 @@
     font-size: 15px;
     color: $grayish-brown;
     margin: 0;
-    padding: 0 0 45px;
+    padding: 0 0 43px;
     border-bottom: 1px solid $gray;
 
     &--toy-basket {
-      padding: 0 0 21px;
+      padding: 0 0 19px;
     }
   }
 

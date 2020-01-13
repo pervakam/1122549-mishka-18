@@ -27,17 +27,75 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  display: flex;
+
+  &--type {
+    &:after {
+      content: "";
+      display: block;
+      width: 198px;
+      border-top: 1px solid #62d1ba;
+      margin-left: 26px;
+      margin-top: 9px;
+    }
+  }
+
+  &--color {
+    &:after {
+      content: "";
+      display: block;
+      width: 198px;
+      border-top: 1px solid #62d1ba;
+      margin-left: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  &--name {
+    &:after {
+      content: "";
+      display: block;
+      width: 198px;
+      border-top: 1px solid #62d1ba;
+      margin-left: 20px;
+      margin-top: 9px;
+    }
+  }
 
   &--tel {
     margin-bottom: 5px;
+    &:after {
+      content: "";
+      display: block;
+      width: 198px;
+      border-top: 1px solid #62d1ba;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
   }
 
   &--mail {
     margin-bottom: 6px;
+    &:after {
+      content: "";
+      display: block;
+      width: 177px;
+      border-top: 1px solid #62d1ba;
+      margin-left: 25px;
+      margin-top: 11px;
+    }
   }
 
   &--extra {
     margin-bottom: 24px;
+    &:after {
+      content: "";
+      display: block;
+      width: 198px;
+      border-top: 1px solid #62d1ba;
+      margin-left: 23px;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -190,12 +248,12 @@
     }
   }
 
-    &:active {
-      &::before {
-        border: 2px solid #444444;
-        opacity: 0.3;
-      }
+  &:active {
+    &::before {
+      border: 2px solid #444444;
+      opacity: 0.3;
     }
+  }
 
   &::after {
     content: "";
@@ -203,7 +261,7 @@
     display: block;
     width: 36px;
     height: 36px;
-    background-image: url("../img/filters/icon-tick.svg");
+    background-image: url("../img/filters/tick.svg");
     background-size: 22px 16px;
     background-repeat: no-repeat;
     margin-left: -53px;
@@ -282,41 +340,31 @@
 
 .filter__wrapper-tel {
   position: relative;
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 25px;
-    height: 24px;
-    top: 34px;
-    right: 7px;
-    background-image: url("../img/filters/icon-phone.svg");
-    background-repeat: no-repeat;
-  }
+}
+
+.filter__icon-phone {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  opacity: 0.2;
 
   &:hover,
   &:focus {
-    &:after {
-      background-image: url("../img/filters/icon-phone-hover.svg");
-    }
+    fill: #62d1ba;
+    opacity: 1;
   }
-
 }
 
 .filter__wrapper-mail {
   position: relative;
-  &:after {
-    content: "";
-    display: block;
+}
+
+.filter__icon-mail {
     position: absolute;
-    width: 32px;
-    height: 26px;
     top: 34px;
     right: 5px;
-    background-image: url("../img/filters/icon-mail.svg");
-    background-repeat: no-repeat;
-  }
-}
+    opacity: 0.2;
+ }
 
 .filter__input-mail {
   margin-bottom: 13px;
@@ -367,6 +415,16 @@
   border: 2px solid $grayish-brown;
   margin: 28px auto 56px;
   background-color: $main-color;
+
+
+  &:hover {
+    background-color: $grayish-brown;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 
@@ -430,14 +488,21 @@
 
   .filter__wrapper-tel {
     padding: 64px 51px 2px;
+
     &:after {
       top: 60px;
       right: 75px;
     }
   }
 
+  .filter__icon-phone {
+    top: 60px;
+    right: 80px;
+  }
+
   .filter__wrapper-mail {
     padding: 24px 51px 39px;
+
     &:after {
       top: 20px;
       right: 72px;
@@ -445,30 +510,57 @@
     }
   }
 
+  .filter__icon-mail {
+    top: 22px;
+    right: 70px;
+  }
+
   .filter__part-title {
     margin: 1px 211px 0 0;
     padding: 0;
 
+    &--type {
+      &:after {
+        display: none;
+      }
+    }
+
     &--color {
       margin: 1px 202px 0 0;
+      &:after {
+        display: none;
+      }
     }
 
     &--name {
       margin: 1px 125px 0 0;
+      &:after {
+        display: none;
+      }
     }
 
     &--tel {
       margin: 1px 133px 0 0;
+      &:after {
+        display: none;
+      }
     }
 
     &--mail {
       min-width: 58px;
       margin: 1px 109px 0 0;
+      &:after {
+        display: none;
+      }
     }
 
     &--extra {
       margin: 15px 128px 0 0;
+      &:after {
+        display: none;
+      }
     }
+
   }
 
   .filter__list-type,
@@ -575,7 +667,7 @@
   .filter__input-tel,
   .filter__input-mail {
     box-sizing: border-box;
-    width: available;
+    width: 100%;
     flex-grow: 1;
     margin-top: -15px;
     padding-left: 16px;
@@ -608,7 +700,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0 50px 50px 50px;
-    //height: 52px;
   }
 
   .filter__legend {
@@ -666,18 +757,29 @@
 
   .filter__wrapper-tel {
     padding: 64px 225px 13px 112px;
+
     &:after {
       top: 60px;
       right: 232px;
     }
   }
 
+  .filter__icon-phone {
+    right: 230px;
+  }
+
   .filter__wrapper-mail {
     padding: 14px 225px 36px 112px;
+
     &:after {
       top: 9px;
       right: 229px;
     }
+  }
+
+  .filter__icon-mail {
+    top: 8px;
+    right: 230px;
   }
 
   .filter__part-title {

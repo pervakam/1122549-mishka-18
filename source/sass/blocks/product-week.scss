@@ -1,4 +1,5 @@
 .product-week {
+  position: relative;
   margin: 0 auto;
   padding: 28px 30px 40px;
   box-sizing: border-box;
@@ -8,6 +9,7 @@
   background-position-y: bottom;
   background-position-x: 9px;
   background-size: 319px 7px;
+  z-index: 0;
 }
 
 .product-week__name {
@@ -71,9 +73,6 @@
   background-color: $gray;
   width: 260px;
   height: 315px;
-  @media (min-resolution: $retina-dppx) {
-    background: $gray url("../img/product-week/triple-set-mobile@2x.jpg") no-repeat;
-  }
 }
 
 .product-week__order {
@@ -159,9 +158,6 @@
     background-color: $gray;
     width: 333px;
     height: 404px;
-    @media (min-resolution: $retina-dppx) {
-      background: $gray url("../img/product-week/triple-set-tablet@2x.jpg") no-repeat;
-    }
   }
 }
 
@@ -181,8 +177,9 @@
   }
 
   .product-week__title {
-    justify-content: left;
+    justify-content: start;
     margin-top: 49px;
+
   }
 
   .product-week__name {
@@ -209,9 +206,6 @@
     background-color: $gray;
     width: 525px;
     height: 636px;
-    @media (min-resolution: $retina-dppx) {
-      background: $gray url("../img/product-week/triple-set-desktop@2x.jpg") no-repeat;
-    }
   }
 
   .product-week__info,

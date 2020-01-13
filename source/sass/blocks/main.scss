@@ -1,7 +1,6 @@
 .page-main {
   margin: 0 auto;
   width: auto;
-
 }
 
 .page-main__intro {
@@ -42,6 +41,7 @@
     background: #f9f9f9 url("../img/index-title/hero-tablet@1x.jpg") no-repeat top center;
     margin-top: -88px;
 
+
     @media (min-resolution: $retina-dppx) {
       background: #f9f9f9 url("../img/index-title/hero-tablet@2x.jpg") no-repeat top center;
       background-size: 1150px 746px;
@@ -63,7 +63,7 @@
     font-size: 43px;
     margin-top: -88px;
     padding: 94px 42px 83px;
-    margin-bottom: 78px;
+    margin-bottom: 72px;
     border-top: 1px solid rgba(68, 68, 68, 0.1);
 
     &::after {
@@ -86,7 +86,6 @@
 @media (min-width: $desktop-width) {
 
   .page-main__intro {
-    height: 627px;
     box-sizing: border-box;
     border-top: 1px solid $gray;
     min-width: 1150px;
@@ -110,7 +109,7 @@
     font-size: 53px;
     margin-top: -88px;
     padding: 90px 42px 105px;
-    margin-bottom: 126px;
+    margin-bottom: 120px;
 
     &::after {
       background-size: 1150px auto;
