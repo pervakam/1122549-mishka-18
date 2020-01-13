@@ -1,4 +1,3 @@
-
 .filter__part {
   width: 320px;
   box-sizing: border-box;
@@ -30,7 +29,7 @@
   display: flex;
 
   &--type {
-    &:after {
+    &::after {
       content: "";
       display: block;
       width: 198px;
@@ -41,7 +40,7 @@
   }
 
   &--color {
-    &:after {
+    &::after {
       content: "";
       display: block;
       width: 198px;
@@ -52,7 +51,7 @@
   }
 
   &--name {
-    &:after {
+    &::after {
       content: "";
       display: block;
       width: 198px;
@@ -64,7 +63,8 @@
 
   &--tel {
     margin-bottom: 5px;
-    &:after {
+
+    &::after {
       content: "";
       display: block;
       width: 198px;
@@ -76,7 +76,8 @@
 
   &--mail {
     margin-bottom: 6px;
-    &:after {
+
+    &::after {
       content: "";
       display: block;
       width: 177px;
@@ -88,7 +89,8 @@
 
   &--extra {
     margin-bottom: 24px;
-    &:after {
+
+    &::after {
       content: "";
       display: block;
       width: 198px;
@@ -122,6 +124,7 @@
 }
 
 .filter__option-radio {
+
   cursor: pointer;
   position: relative;
   display: flex;
@@ -191,6 +194,7 @@
     display: block;
     width: 16px;
     height: 16px;
+    top: 0;
     border-radius: 50%;
     background-color: #62d1ba;
     margin-left: -51px;
@@ -360,11 +364,11 @@
 }
 
 .filter__icon-mail {
-    position: absolute;
-    top: 34px;
-    right: 5px;
-    opacity: 0.2;
- }
+  position: absolute;
+  top: 34px;
+  right: 5px;
+  opacity: 0.2;
+}
 
 .filter__input-mail {
   margin-bottom: 13px;
@@ -379,6 +383,10 @@
   border: 2px solid $black;
   width: 100%;
   min-height: 142px;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 
   &:hover {
     border: 2px solid #62d1ba;
@@ -429,7 +437,6 @@
 
 
 @media (min-width: $tablet-width) {
-
   .filter__part {
     display: flex;
     justify-content: left;
@@ -489,7 +496,7 @@
   .filter__wrapper-tel {
     padding: 64px 51px 2px;
 
-    &:after {
+    &::after {
       top: 60px;
       right: 75px;
     }
@@ -503,10 +510,9 @@
   .filter__wrapper-mail {
     padding: 24px 51px 39px;
 
-    &:after {
+    &::after {
       top: 20px;
       right: 72px;
-
     }
   }
 
@@ -520,28 +526,31 @@
     padding: 0;
 
     &--type {
-      &:after {
+      &::after {
         display: none;
       }
     }
 
     &--color {
       margin: 1px 202px 0 0;
-      &:after {
+
+      &::after {
         display: none;
       }
     }
 
     &--name {
       margin: 1px 125px 0 0;
-      &:after {
+
+      &::after {
         display: none;
       }
     }
 
     &--tel {
       margin: 1px 133px 0 0;
-      &:after {
+
+      &::after {
         display: none;
       }
     }
@@ -549,18 +558,19 @@
     &--mail {
       min-width: 58px;
       margin: 1px 109px 0 0;
-      &:after {
+
+      &::after {
         display: none;
       }
     }
 
     &--extra {
       margin: 15px 128px 0 0;
-      &:after {
+
+      &::after {
         display: none;
       }
     }
-
   }
 
   .filter__list-type,
@@ -689,7 +699,6 @@
     padding-top: 12px;
     padding-left: 14px;
     font-size: 19px;
-
   }
 
   .filter__end {
@@ -720,7 +729,6 @@
 
 
 @media (min-width: $desktop-width) {
-
   .filter__part {
     padding-left: 112px;
     width: 1150px;
@@ -758,7 +766,7 @@
   .filter__wrapper-tel {
     padding: 64px 225px 13px 112px;
 
-    &:after {
+    &::after {
       top: 60px;
       right: 232px;
     }
@@ -771,7 +779,7 @@
   .filter__wrapper-mail {
     padding: 14px 225px 36px 112px;
 
-    &:after {
+    &::after {
       top: 9px;
       right: 229px;
     }
@@ -844,4 +852,3 @@
     padding: 0 225px 50px 225px;
   }
 }
-

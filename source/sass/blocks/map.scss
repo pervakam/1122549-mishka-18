@@ -1,4 +1,4 @@
-.map{
+.map {
   position: relative;
 }
 
@@ -23,7 +23,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .map__frame {
     width: 768px;
   }
@@ -42,7 +41,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .map__frame {
     width: 525px;
   }
@@ -60,5 +58,4 @@
     top: 143px;
     right: 220px;
   }
-
 }

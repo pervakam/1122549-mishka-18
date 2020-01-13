@@ -76,16 +76,16 @@
     margin-top: 33px;
     margin-left: 2px;
 
-  &::before {
-    margin-left: -6px;
-    margin-bottom: 27px;
-    display: block;
-    content: "";
-    background: url("../img/about-us/feature-rocket.svg") no-repeat;
-    height: 23px;
-    width: 55px;
+    &::before {
+      margin-left: -6px;
+      margin-bottom: 27px;
+      display: block;
+      content: "";
+      background: url("../img/about-us/feature-rocket.svg") no-repeat;
+      height: 23px;
+      width: 55px;
+    }
   }
-}
 
   &--giftbox::before {
     margin-left: 3px;
@@ -100,7 +100,6 @@
 
 
 @media (min-width: $tablet-width) {
-
   .about-us {
     box-sizing: border-box;
     width: 768px;
@@ -184,7 +183,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .about-us {
     box-sizing: border-box;
     width: 1150px;
@@ -206,7 +204,6 @@
   }
 
   .about-us__item {
-
     &--price {
       &::before {
         margin-bottom: 26px;
